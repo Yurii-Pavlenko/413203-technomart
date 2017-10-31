@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Юрий Павленко](https://up.htmlacademy.ru/htmlcss/19/user/413203).
-* Наставник: `Сергей Рубец`.
+* Наставник: [Сергей Рубец](https://htmlacademy.ru/profile/amator)
 
 ---
 
