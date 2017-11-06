@@ -10,13 +10,13 @@
 
   <section class="store-navigation">
     <h2 class="visually-hidden">В помощь заказчику</h2>
-    <a class="header-logo">Техномарт</a>
+    <a class="header-logo" href="index.html">Техномарт</a>
     <form class="search-header">Поиск
       <!--Здесь будет форма-->
     </form>
-    <a class="header-bookmark" href="#">Закладки</a>
-    <a class="header-cort" href="#">Корзина</a>
-    <a class="header-order" href="#">Заказ</a>
+    <a class="header-bookmark" href="#">Закладки: 0</a>
+    <a class="header-cort" href="#">Корзина: 10</a>
+    <a class="header-order" href="#">Оформить заказ</a>
   </section>
 
   <section class="store-info">
@@ -27,8 +27,10 @@
       <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     </div>
     <ul class="user-navigation">
-      <li class="header-login"><a href="#">Вход</a></li>
-      <li class="header-registration"><a href="#">Регистрация</a></li>
+      <li class="user-name"><a href="#">Равшан Джамшутович</a></li>
+      <li class="user-logout"><a href="#"></a></li>
+      <li class="user-link"><a href="#"></a>Мои заказы</li>
+      <li class="user-link"><a href="#">Личный кабинет</a></li>
     </ul>
   </section>
 
@@ -36,7 +38,7 @@
     <h2 class="visually-hidden">Навигация по сайту</h2>
     <ul class="site-navigation">
       <li class="nav-item">
-        <a class="nav-link">Главная</a>
+        <a class="nav-link" href="index.html">Главная</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Компания</a>
@@ -60,11 +62,182 @@
   </nav>
 </header>
 
-<main class="catalog-container">
+<main class="catalog">
 
-  <h1 class="catalog-title">Перфораторы</h1>
+  <header class="catalog-header">
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link" href="#">Каталог</a>
+      </li>
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link" href="#">Инструмент</a>
+      </li>
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link-current" href="catalog.html">Перфораторы</a>
+      </li>
+    </ul>
+    <h1 class="catalog-title">Перфораторы</h1>
+  </header>
 
+  <section class="catalog-filter">
+    <form class="filter-form">
+      <h2 class="filter-title">Фильтр:</h2>
+      <div class="filter-price">
+        <h3 class="filter-price-title">Цена:</h3>
+        <div class="filter-price-range">
+          <span class="filter-price-slider">
+            <!--Здесь будет бегунок или ползунок-->
+          </span>
+        </div>
+        <div class="filter-price-min">0</div>
+        <span class="filter-price-dash"> - </span>
+        <div class="filter-price-max">30000</div>
+      </div>
+      <div class="filter-manufacturers">
+        <h3 class="filter-manufacturers-title">Производители:</h3>
+        <ul class="filter-manufacturers-list">
+          <li class="filter-manufacturers-item">
+            <span class="filter-manufacturers button-checked">BOSH</span>
+          </li>
+          <li class="filter-manufacturers-item">
+            <span class="filter-manufacturers button">ИНТЕРСКОЛ</span>
+          </li>
+          <li class="filter-manufacturers-item">
+            <span class="filter-manufacturers button-checked">MAKITA</span>
+          </li>
+          <li class="filter-manufacturers-item">
+            <span class="filter-manufacturers button">DEWALT</span>
+          </li>
+          <li class="filter-manufacturers-item">
+            <span class="filter-manufacturers button">HITACHI</span>
+          </li>
+        </ul>
+      </div>
+      <div class="filter-power">
+        <h3 class="filter-power-title">Питание:</h3>
+        <ul class="filter-power-list">
+          <li class="filter-power-item">
+            <span class="filter-power-type-checked">АККУМУЛЯТОРНЫЕ</span>
+          </li>
+          <li class="filter-power-item">
+            <span class="filter-power-type">СЕТЕВЫЕ</span>
+          </li>
+        </ul>
+      </div>
+      <span class="button btn-filter">ПОКАЗАТЬ</span>
+    </form>
+  </section>
 
+  <section class="catalog-sort">
+    <header class="sort-header">
+      <h2 class="sort-title">СОРТИРОВКА:</h2>
+      <ul class="sort-list">
+        <li class="sort-item">
+          <a class="sort-link active" href="#">ПО ЦЕНЕ</a>
+        </li>
+        <li class="sort-item">
+          <a class="sort-link" href="#">ПО ТИПУ</a>
+        </li>
+        <li class="sort-item">
+          <a class="sort-link" href="#">ПО ФУНКЦИОНАЛУ</a>
+        </li>
+        <li class="sort-item">
+          <a class="sort-link" href="#">
+            <span class="sort-up-triangle active"><!--Здесь будет треугольник вверх--></span>
+          </a>
+        </li>
+        <li class="sort-item">
+          <a class="sort-link" href="#">
+            <span class="sort-down-triangle"><!--Здесь будет треугольник вниз--></span>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <ul class="sort-list">
+      <li>
+        <div class="sort-item">
+          <img src="http://placehold.it/150x100" alt="Перфоратор Bosch BFG 3000">
+          <h3 class="name-item">Перфоратор Bosch BFG 3000</h3>
+          <p class="old-price">22500 p.</p>
+          <p class="new-price">15500 p.</p>
+        </div>
+      </li>
+      <li>
+        <div class="sort-item">
+          <img src="http://placehold.it/150x100" alt="Перфоратор Bosch BFG 6000">
+          <h3 class="name-item">Перфоратор Bosch BFG 6000</h3>
+          <p class="old-price">30500 p.</p>
+          <p class="new-price">25500 p.</p>
+        </div>
+      </li>
+      <li>
+        <div class="sort-item">
+          <a class="sort-buy" href="#">КУПИТЬ</a>
+          <a class="sort-bookmark" href="#">В ЗАКЛАДКИ</a>
+          <span class="new">New</span>
+          <h3 class="name-item">Перфоратор Bosch BFG 2000</h3>
+          <p class="old-price"></p>
+          <p class="new-price">25500 p.</p>
+        </div>
+      </li>
+      <li>
+        <div class="sort-item">
+          <img src="http://placehold.it/150x100" alt="Перфоратор Bosch BFG 3000">
+          <h3 class="name-item">Перфоратор Bosch BFG 3000</h3>
+          <p class="old-price">22500 p.</p>
+          <p class="new-price">15500 p.</p>
+        </div>
+      </li>
+      <li>
+        <div class="sort-item">
+          <img src="http://placehold.it/150x100" alt="Перфоратор Bosch BFG 6000">
+          <h3 class="name-item">Перфоратор Bosch BFG 6000</h3>
+          <span class="new">New</span>
+          <p class="old-price">30500 p.</p>
+          <p class="new-price">25500 p.</p>
+        </div>
+      </li>
+      <li>
+        <div class="sort-item">
+          <img src="http://placehold.it/150x100" alt="Перфоратор Bosch BFG 2000">
+          <h3 class="name-item">Перфоратор Bosch BFG 2000</h3>
+          <p class="old-price"></p>
+          <p class="new-price">25500 p.</p>
+        </div>
+      </li>
+      <li>
+        <div class="sort-item">
+          <img src="http://placehold.it/150x100" alt="Перфоратор Bosch BFG 3000">
+          <h3 class="name-item">Перфоратор Bosch BFG 3000</h3>
+          <span class="new">New</span>
+          <p class="old-price">22500 p.</p>
+          <p class="new-price">15500 p.</p>
+        </div>
+      </li>
+      <li>
+        <div class="sort-item">
+          <img src="http://placehold.it/150x100" alt="Перфоратор Bosch BFG 6000">
+          <h3 class="name-item">Перфоратор Bosch BFG 6000</h3>
+          <p class="old-price">30500 p.</p>
+          <p class="new-price">25500 p.</p>
+        </div>
+      </li>
+      <li>
+        <div class="sort-item">
+          <img src="http://placehold.it/150x100" alt="Перфоратор Bosch BFG 2000">
+          <h3 class="name-item">Перфоратор Bosch BFG 2000</h3>
+          <p class="old-price"></p>
+          <p class="new-price">25500 p.</p>
+        </div>
+      </li>
+    </ul>
+    <footer class="sort-footer">
+      <a class="page-link current">1</a>
+      <a class="page-link" href="#">2</a>
+      <a class="page-link" href="#">3</a>
+      <a class="page-link next" href="#">Следующая</a>
+    </footer>
+  </section>
 
   <footer class="catalog-footer">
     <nav class="footer-navigation">
