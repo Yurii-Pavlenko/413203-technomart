@@ -80,7 +80,7 @@
   </header>
 
   <section class="catalog-filter">
-    <form class="filter-form">
+    <form class="filter-form" action="">
       <h2 class="filter-title">Фильтр:</h2>
       <div class="filter-price">
         <h3 class="filter-price-title">Цена:</h3>
@@ -89,27 +89,29 @@
             <!--Здесь будет бегунок или ползунок-->
           </span>
         </div>
-        <div class="filter-price-min">0</div>
-        <span class="filter-price-dash"> - </span>
-        <div class="filter-price-max">30000</div>
+        <div class="filter-price-diapason">
+          <input class="price-field" type="text" name="price-min" title="" value="0">
+          <span class="filter-price-dash"> - </span>
+          <input class="price-field" type="text" name="price-max" title="" value="30000">
+        </div>
       </div>
       <div class="filter-manufacturers">
         <h3 class="filter-manufacturers-title">Производители:</h3>
         <ul class="filter-manufacturers-list">
           <li class="filter-manufacturers-item">
-            <span class="filter-manufacturers button-checked">BOSH</span>
+            <span class="filter-manufacturers button-checked">Bosh</span>
           </li>
           <li class="filter-manufacturers-item">
-            <span class="filter-manufacturers button">ИНТЕРСКОЛ</span>
+            <span class="filter-manufacturers button">Интерскол</span>
           </li>
           <li class="filter-manufacturers-item">
-            <span class="filter-manufacturers button-checked">MAKITA</span>
+            <span class="filter-manufacturers button-checked">Makita</span>
           </li>
           <li class="filter-manufacturers-item">
-            <span class="filter-manufacturers button">DEWALT</span>
+            <span class="filter-manufacturers button">Dewalt</span>
           </li>
           <li class="filter-manufacturers-item">
-            <span class="filter-manufacturers button">HITACHI</span>
+            <span class="filter-manufacturers button">Hitachi</span>
           </li>
         </ul>
       </div>
@@ -117,29 +119,29 @@
         <h3 class="filter-power-title">Питание:</h3>
         <ul class="filter-power-list">
           <li class="filter-power-item">
-            <span class="filter-power-type-checked">АККУМУЛЯТОРНЫЕ</span>
+            <span class="filter-power-type-checked">Аккумуляторные</span>
           </li>
           <li class="filter-power-item">
-            <span class="filter-power-type">СЕТЕВЫЕ</span>
+            <span class="filter-power-type">Сетевые</span>
           </li>
         </ul>
       </div>
-      <span class="button btn-filter">ПОКАЗАТЬ</span>
+      <span class="button btn-filter">Показать</span>
     </form>
   </section>
 
   <section class="catalog-sort">
     <header class="sort-header">
-      <h2 class="sort-title">СОРТИРОВКА:</h2>
+      <h2 class="sort-title">Сортировка:</h2>
       <ul class="sort-list">
         <li class="sort-item">
-          <a class="sort-link active" href="#">ПО ЦЕНЕ</a>
+          <a class="sort-link active" href="#">По цене</a>
         </li>
         <li class="sort-item">
-          <a class="sort-link" href="#">ПО ТИПУ</a>
+          <a class="sort-link" href="#">По типу</a>
         </li>
         <li class="sort-item">
-          <a class="sort-link" href="#">ПО ФУНКЦИОНАЛУ</a>
+          <a class="sort-link" href="#">По функционалу</a>
         </li>
         <li class="sort-item">
           <a class="sort-link" href="#">
@@ -172,9 +174,8 @@
       </li>
       <li>
         <div class="sort-item">
-          <a class="sort-buy" href="#">КУПИТЬ</a>
-          <a class="sort-bookmark" href="#">В ЗАКЛАДКИ</a>
-          <span class="new">New</span>
+          <a class="sort-buy" href="#">Купить</a>
+          <a class="sort-bookmark" href="#">В закладки</a>
           <h3 class="name-item">Перфоратор Bosch BFG 2000</h3>
           <p class="old-price"></p>
           <p class="new-price">25500 p.</p>
@@ -192,7 +193,6 @@
         <div class="sort-item">
           <img src="http://placehold.it/150x100" alt="Перфоратор Bosch BFG 6000">
           <h3 class="name-item">Перфоратор Bosch BFG 6000</h3>
-          <span class="new">New</span>
           <p class="old-price">30500 p.</p>
           <p class="new-price">25500 p.</p>
         </div>
@@ -209,7 +209,6 @@
         <div class="sort-item">
           <img src="http://placehold.it/150x100" alt="Перфоратор Bosch BFG 3000">
           <h3 class="name-item">Перфоратор Bosch BFG 3000</h3>
-          <span class="new">New</span>
           <p class="old-price">22500 p.</p>
           <p class="new-price">15500 p.</p>
         </div>
