@@ -176,24 +176,38 @@ a {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
-  background-color: #e5e5e5;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.promo-goods a:hover,
+.promo-goods a:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.promo-goods a:active {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .promo-materials {
   background-color: #ffbf47;
 }
+
 .promo-instruments {
   background-color: #3bbce3;
 }
+
 .promo-machinery {
   background-color: #dc91d8;
 }
+
 .promo-discounts {
   background-color: #8ed78f;
 }
+
 .promo-delivery {
   background-color: #ffc047;
 }
+
 
 
 
