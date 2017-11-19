@@ -208,9 +208,53 @@ a {
   background-color: #ffc047;
 }
 
+/* стилизация для слайдера */
 
+.punchers {
+  background-image: url("../img/backgrounds/slide-punchrs.jpg");
+  width: 620px;
+  height: 266px;
+  background-repeat: no-repeat;
+}
 
+.drills {
+  background-image: url("../img/backgrounds/slide-drills.jpg");
+  width: 620px;
+  height: 266px;
+  background-repeat: no-repeat;
+}
 
+.slide-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.slide-text {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.promo-slider a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.promo-slider .button {
+  background-color: #ee3643;
+}
+
+.promo-slider .button:hover,
+.promo-slider .button:focus {
+  background-color: #ca2c37;
+}
+
+.promo-slider .button:active {
+  background-color: #ba2732;
+}
 
 .main-footer ul {
   list-style: none;
