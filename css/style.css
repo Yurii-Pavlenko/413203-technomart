@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.main-header ul {
+  list-style: none;
+}
+
+.store-navigation {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.store-navigation a {
+  color: #ffffff;
+}
+
+.header-logo {
+  background-color: #ee3643;
+  border: 1px solid #e03643;
+  border-bottom: 5px solid #b52933;
+}
+
+.header-logo:hover,
+.header-logo:focus {
+  background-color: #ca2c37;
+  border: 4px solid #d70b0c;
+}
+
+.header-logo:active {
+  background-color: #ba2732;
+  border: 1px solid #b72732;
+  border-bottom: 5px solid #8e1e26;
+}
+
+.search-header:hover,
+.header-bookmark:hover,
+.header-cort:hover,
+.header-bookmark:focus,
+.header-cort:focus {
+  background-color: #212a3a;
+}
+
+.header-bookmark:active,
+.header-cort:active {
+  color: #a2a5a9;
+  background-color: #161d29;
+}
+
+.search-header input {
+  background-color: #293449;
+  border: none;
+}
+
+.search-header input:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.header-order {
+  background-color: #63a63e;
+}
+
+.header-order:hover,
+.header-order:focus {
+  background-color: #5fbb2d;
+}
+
+.header-order:active {
+  color: #aac39b;
+  background-color: #518534;
+}
+
+
+.store-info {
+  background-color: #f3f7f8;
+}
+
+.store-info .header-text {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.header-phone {
+  font-size: 21px;
+  line-height: 18px;
+  color: #ee3643;
+  border: 3px solid #ffffff;
+}
+
+.header-address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.header-login,
+.header-registration {
+  font-size: 21px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.header-login:hover,
+.header-registration:hover,
+.header-login:focus,
+.header-registration:focus {
+  color: #ee3643;
+}
+
+.header-login:active,
+.header-registration:active {
+  color: #b2b2b2;
+}
+
+.header-login a, .header-registration a {
+  color: #000000;
+}
+
+.main-navigation {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+  background-color: #32425c;
+  border-bottom: 5px solid #293449;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: #293449;
+}
+
+.nav-link:active {
+  color: #868c95;
+  background-color: #1d2739;
+}
+
+.main-navigation a {
+  color: #ffffff;
+}
+
+.main-container ul {
+  list-style: none;
+}
+
+.promo-goods {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.promo-goods a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #e5e5e5;
+}
+
+.promo-materials {
+  background-color: #ffbf47;
+}
+.promo-instruments {
+  background-color: #3bbce3;
+}
+.promo-machinery {
+  background-color: #dc91d8;
+}
+.promo-discounts {
+  background-color: #8ed78f;
+}
+.promo-delivery {
+  background-color: #ffc047;
+}
+
+
+
+
+.main-footer ul {
+  list-style: none;
+}
