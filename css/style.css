@@ -260,26 +260,30 @@ a {
   background-color: #ba2732;
 }
 
-/* стилизация блока популярных товаров */
+/* стилизация блоков популярных товаров и популярных производителей */
 
-.popular-goods .title {
+.popular-goods .title,
+.popular-manufacturers .title{
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
 }
 
-.goods-header {
+.goods-header,
+.manufacturers-header {
   background-color: #f9f5f0;
 }
 
-.popular-goods .button {
+.popular-goods .button,
+.popular-manufacturers .button {
   font-size: 14px;
   line-height: 18px;
   background-color: #ee3643;
 }
 
-.goods-item {
+.goods-item,
+.manufacturers-item {
   background-color: #ffffff;
   border: 1px solid #eaeaea;
 }
@@ -345,6 +349,45 @@ a {
 .new-price {
   color: #ffffff;
   background-color: #ee3643;
+}
+
+/* стилизация блока сервисы */
+
+.services {
+  background-color: #f5f8fa;
+}
+
+.services input {
+  display: none;
+}
+
+.services label {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #32425c;
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
+}
+
+.services label:hover {
+color: #ffffff;
+  background-color: #293449;
+}
+
+.services label:active {
+  color: #32425c;
+  background-color: #ffffff;
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+.services-decor {
+  width: 10px;
+  height: 272px;
+  background-image: url("../img/decor/services-shadow.png");
+  background-repeat: no-repeat;
 }
 
 .main-footer ul {
