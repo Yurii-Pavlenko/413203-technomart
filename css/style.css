@@ -357,6 +357,23 @@ a {
   background-color: #f5f8fa;
 }
 
+.services-title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.serve-slide .services-title {
+  color: #32425c;
+}
+
+.services-text {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
 .services input {
   display: none;
 }
