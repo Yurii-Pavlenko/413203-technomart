@@ -13,6 +13,7 @@ body {
 
 a {
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .visually-hidden {
@@ -37,9 +38,17 @@ a {
 }
 
 .header-logo {
+  font-size: 24px;
+  line-height: 24px;
   background-color: #ee3643;
   border: 1px solid #e03643;
   border-bottom: 5px solid #b52933;
+}
+
+.header-bookmark,
+.header-cort,
+.header-order {
+  text-transform: none;
 }
 
 .header-logo:hover,
@@ -147,6 +156,10 @@ a {
   color: #ffffff;
   background-color: #32425c;
   border-bottom: 5px solid #293449;
+}
+
+.main-navigation a {
+  text-transform: none;
 }
 
 .nav-link:hover,
@@ -276,9 +289,12 @@ a {
 }
 
 .popular-goods .button,
-.popular-manufacturers .button {
+.popular-manufacturers .button,
+.btn-transport,
+.contacts-feedback {
   font-size: 14px;
   line-height: 18px;
+  color: #ffffff;
   background-color: #ee3643;
 }
 
@@ -351,13 +367,15 @@ a {
   background-color: #ee3643;
 }
 
-/* стилизация блока сервисы */
+/* стилизация блока Сервисы, блоков О Компании и Контакты */
 
 .services {
   background-color: #f5f8fa;
 }
 
-.services-title {
+.services-title,
+.about-title,
+.contacts-title {
   font-weight: 400;
   font-size: 30px;
   line-height: 24px;
@@ -368,7 +386,9 @@ a {
   color: #32425c;
 }
 
-.services-text {
+.services-text,
+.about-text,
+.contacts-text {
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -407,9 +427,51 @@ color: #ffffff;
   background-repeat: no-repeat;
 }
 
+.transport-item {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+/* Стилизация футера */
+
 .main-footer ul {
   list-style: none;
 }
 
+.footer-logo {
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #ee3643;
+  border: 1px solid #e03643;
+  border-bottom: 5px solid #b52933;
+}
 
+.footer-navigation {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #32425c;
+}
 
+.footer-nav-list a {
+  color: #ffffff;
+  text-transform: none;
+}
+
+.footer-subnav-list a {
+  color: #ffd180;
+  text-transform: none;
+}
+
+.footer-contacts {
+  font-size: 18px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.footer-contacts a {
+  color: #ffd180;
+  text-transform: none;
+}
