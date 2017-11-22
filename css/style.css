@@ -22,7 +22,8 @@ a {
 
 /* стилизация хедера */
 
-.main-header ul {
+.main-header ul,
+.catalog-header ul {
   list-style: none;
 }
 
@@ -127,7 +128,8 @@ a {
 }
 
 .header-login,
-.header-registration {
+.header-registration,
+.user-name {
   font-size: 21px;
   line-height: 18px;
   color: #000000;
@@ -149,6 +151,21 @@ a {
 .header-login a, .header-registration a {
   color: #000000;
 }
+ .user-link a {
+   font-size: 16px;
+   line-height: 18px;
+   color: #32425c;
+   text-decoration: underline;
+ }
+
+ .user-link a:hover,
+ .user-link a:focus {
+   color: #ee3643;
+ }
+
+ .user-link a:active {
+   color: #b7bfc8;
+ }
 
 .main-navigation {
   font-size: 17px;
@@ -176,9 +193,61 @@ a {
   color: #ffffff;
 }
 
+.breadcrumbs-link {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+
+/* стилизация блоков фильтр и сортировка в каталоге */
+
+.catalog-title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  background-color: #f2f6f8;
+  text-transform: uppercase;
+}
+
+.catalog-filter,
+.catalog-sort,
+.catalog-filter h2,
+.catalog-sort h2 {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-filter fieldset {
+  border: none;
+}
+
+.filter-title,
+.filter-price-slider,
+.sort-header {
+  background-color: #f7f3ec;
+}
+
+.price-field {
+  background-color: #f7f3ec;
+  border: none;
+}
+
+.catalog legend {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  color: #000000;
+}
+
 /* стилизация блока промо */
 
-.main-container ul {
+.main-container ul,
+.catalog ul {
   list-style: none;
 }
 
@@ -309,6 +378,22 @@ a {
   line-height: 18px;
 }
 
+.sort-item a{
+  color: #cacaca;
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sort-item a:hover,
+.sort-item a:focus {
+  color: #000000;
+  border-bottom-style: solid;
+}
+
+.sort-item .active {
+  color: #ee3643;
+  border: none;
+}
+
 .goods-item .buy {
   color: #ffffff;
   background-color: #63a63e;
@@ -363,6 +448,28 @@ a {
 }
 
 .new-price {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.sort-footer a {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  border: 1px solid #e5e5e5;
+}
+
+.sort-footer a:hover,
+.sort-footer a:focus {
+  border-color: #bdc6ca;
+}
+
+.sort-footer a:active {
+  border-color: #ee3643;
+}
+
+.sort-footer .current {
   color: #ffffff;
   background-color: #ee3643;
 }
