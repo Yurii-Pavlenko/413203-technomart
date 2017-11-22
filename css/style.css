@@ -17,7 +17,14 @@ a {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 /* стилизация хедера */
@@ -46,9 +53,7 @@ a {
   border-bottom: 5px solid #b52933;
 }
 
-.header-bookmark,
-.header-cort,
-.header-order {
+.store-nav-link {
   text-transform: none;
 }
 
@@ -65,15 +70,12 @@ a {
 }
 
 .search-header:hover,
-.header-bookmark:hover,
-.header-cort:hover,
-.header-bookmark:focus,
-.header-cort:focus {
+.store-nav-link:hover,
+.store-nav-link:focus {
   background-color: #212a3a;
 }
 
-.header-bookmark:active,
-.header-cort:active {
+.store-nav-link:active {
   color: #a2a5a9;
   background-color: #161d29;
 }
@@ -127,8 +129,7 @@ a {
   color: #32425c;
 }
 
-.header-login,
-.header-registration,
+.user-nav-link,
 .user-name {
   font-size: 21px;
   line-height: 18px;
@@ -136,19 +137,16 @@ a {
   background-color: #ffffff;
 }
 
-.header-login:hover,
-.header-registration:hover,
-.header-login:focus,
-.header-registration:focus {
+.user-nav-link:hover,
+.user-nav-link:focus {
   color: #ee3643;
 }
 
-.header-login:active,
-.header-registration:active {
+.user-nav-link:active {
   color: #b2b2b2;
 }
 
-.header-login a, .header-registration a {
+.user-nav-link a {
   color: #000000;
 }
  .user-link a {
@@ -210,10 +208,7 @@ a {
   text-transform: uppercase;
 }
 
-.catalog-filter,
-.catalog-sort,
-.catalog-filter h2,
-.catalog-sort h2 {
+.catalog-part {
   font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 13px;
@@ -222,13 +217,11 @@ a {
   text-transform: uppercase;
 }
 
-.catalog-filter fieldset {
+fieldset {
   border: none;
 }
 
-.filter-title,
-.filter-price-slider,
-.sort-header {
+.caption {
   background-color: #f7f3ec;
 }
 
@@ -329,27 +322,14 @@ a {
   color: #ffffff;
 }
 
-.promo-slider .button {
-  background-color: #ee3643;
-}
-
-.promo-slider .button:hover,
-.promo-slider .button:focus {
-  background-color: #ca2c37;
-}
-
-.promo-slider .button:active {
-  background-color: #ba2732;
-}
-
 /* стилизация блоков популярных товаров и популярных производителей */
 
-.popular-goods .title,
-.popular-manufacturers .title{
+.title{
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
+  text-transform: uppercase;
 }
 
 .goods-header,
@@ -357,14 +337,20 @@ a {
   background-color: #f9f5f0;
 }
 
-.popular-goods .button,
-.popular-manufacturers .button,
-.btn-transport,
-.contacts-feedback {
+.button-red {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
   background-color: #ee3643;
+}
+
+.button-red:hover,
+.button-red:focus {
+  background-color: #ca2c37;
+}
+
+.button-red:active {
+  background-color: #ba2732;
 }
 
 .goods-item,
@@ -480,22 +466,22 @@ a {
   background-color: #f5f8fa;
 }
 
-.services-title,
-.about-title,
-.contacts-title {
+.services-title {
   font-weight: 400;
   font-size: 30px;
   line-height: 24px;
   text-transform: uppercase;
 }
 
-.serve-slide .services-title {
+.serve-slide-title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 24px;
+  text-transform: uppercase;
   color: #32425c;
 }
 
-.services-text,
-.about-text,
-.contacts-text {
+.services-text {
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   line-height: 24px;
