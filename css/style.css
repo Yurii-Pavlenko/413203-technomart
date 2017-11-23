@@ -129,8 +129,7 @@ a {
   color: #32425c;
 }
 
-.user-nav-link,
-.user-name {
+.user {
   font-size: 21px;
   line-height: 18px;
   color: #000000;
