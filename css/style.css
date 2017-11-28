@@ -81,11 +81,11 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.header-logo {
+.logo {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
-  width: 218px;
+  width: 220px;
   height: 30px;
   margin-right: 10px;
   text-align: center;
@@ -683,6 +683,7 @@ fieldset {
   min-height: 536px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: -80px;
 }
 
 .about {
@@ -855,22 +856,35 @@ color: #ffffff;
 }
 
 .footer-logo {
-  margin: 0;
-  padding: 0;
+  height: 45px;
+  padding-top: 15px;
+  margin-bottom: 35px;
   font-size: 30px;
   line-height: 30px;
-  color: #ffffff;
-  background-color: #ee3643;
-  border: 1px solid #e03643;
-  border-bottom: 5px solid #b52933;
 }
 
 .footer-navigation {
+  display: flex;
+  justify-content: flex-start;
   padding-left: 130px;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
   background-color: #32425c;
+}
+
+.footer-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav-list {
+  display: flex;
+}
+
+.footer-subnav-list {
+  display: flex;
+
 }
 
 .footer-nav-list a {
@@ -898,6 +912,8 @@ color: #ffffff;
   color: #998a6e;
 }
 .footer-contacts {
+  display: flex;
+  padding-left: 130px;
   font-size: 18px;
   line-height: 16px;
   color: #ffffff;
