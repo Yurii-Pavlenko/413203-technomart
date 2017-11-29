@@ -51,6 +51,13 @@ input[type="radio"].visually-hidden {
   background-color: #f3f7f9;
   margin-bottom: 60px;
 }
+
+.catalog-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
 .main-header ul,
 .catalog-header ul {
   list-style: none;
@@ -63,7 +70,7 @@ input[type="radio"].visually-hidden {
   width: auto;
   min-height: 35px;
   padding: 0 130px;
-  margin-bottom: 48px;
+  margin-bottom: 49px;
   justify-content: space-between;
   font-size: 17px;
   line-height: 18px;
@@ -312,6 +319,25 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
+/* стилизация блока каталог-хедер в каталоге */
+
+.catalog {
+  width: 940px;
+  min-height: 60px;
+  padding-left: 130px;
+}
+
+.breadcrumbs {
+  display: flex;
+
+}
+
+.breadcrumbs-item {
+  width: 110px;
+  min-height: 30px;
+  margin-right: 10px;
+}
+
 .breadcrumbs-link {
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
@@ -319,15 +345,31 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-/* стилизация блоков фильтр и сортировка в каталоге */
-
 .catalog-title {
+  margin: 0;
+  padding: 0;
+  width: 940px;
+  min-height: 90px;
+  margin-top: 10px;
+  padding-top: 31px;
+  padding-left: 28px;
+  font-weight: 400;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
   background-color: #f2f6f8;
   text-transform: uppercase;
+
 }
+
+/* стилизация основной части страницы каталога  */
+
+.catalog-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* стилизация блоков фильтр и сортировка в каталоге */
 
 .catalog-part {
   font-family: 'PT Sans', sans-serif;
@@ -495,10 +537,6 @@ fieldset {
   margin-bottom: 20px;
 }
 
-/*.goods-header h2 {
-  margin-right: 373px;
-}*/
-
 .button-red {
   width: 254px;
   min-height: 38px;
@@ -542,12 +580,6 @@ fieldset {
   border: 1px solid #eaeaea;
   transition: transform 0.4s ease-out;
 }
-
-/*.goods-name h3,
-.goods-name p {
-  margin: 0;
-  padding: 0;
-}*/
 
 .goods-item a {
   font-size: 14px;
