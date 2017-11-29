@@ -839,6 +839,14 @@ color: #ffffff;
   margin-bottom: 36px;
 }
 
+.btn-transport {
+  width: 220px;
+}
+
+.contacts-feedback {
+  width: 300px;
+}
+
 /* Стилизация футера */
 
 .main-footer {
@@ -858,7 +866,8 @@ color: #ffffff;
 .footer-logo {
   height: 45px;
   padding-top: 15px;
-  margin-bottom: 35px;
+  margin-right: 170px;
+  margin-bottom: 32px;
   font-size: 30px;
   line-height: 30px;
 }
@@ -866,6 +875,9 @@ color: #ffffff;
 .footer-navigation {
   display: flex;
   justify-content: flex-start;
+  width: auto;
+  min-height: 193px;
+
   padding-left: 130px;
   font-size: 18px;
   line-height: 24px;
@@ -879,11 +891,23 @@ color: #ffffff;
 }
 
 .footer-nav-list {
+  width: 543px;
+  min-height: 30px;
+  margin-bottom: 34px;
+  padding-top: 18px;
   display: flex;
+  justify-content: space-between;
 }
 
 .footer-subnav-list {
+  width: 518px;
+  min-height: 30px;
+  margin-left: 25px;
   display: flex;
+  justify-content: space-between;
+}
+
+.nav-container h2 {
 
 }
 
@@ -912,12 +936,21 @@ color: #ffffff;
   color: #998a6e;
 }
 .footer-contacts {
+  width: auto;
+  min-height: 107px;
   display: flex;
+  padding-top: 37px;
   padding-left: 130px;
   font-size: 18px;
   line-height: 16px;
   color: #ffffff;
   background-color: #293449;
+}
+
+.footer-copyright {
+  width: 240px;
+  min-height: 45px;
+  margin-right: 140px;
 }
 
 .footer-contacts a {
@@ -944,4 +977,18 @@ color: #ffffff;
 .footer-social a:active {
   background-color: #ee3643;
   text-decoration: none;
+}
+
+.footer-social-list {
+  width: 270px;
+  min-height: 50px;
+  display: flex;
+  margin-right: 90px;
+}
+
+.footer-container {
+  width: 305px;
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
 }
