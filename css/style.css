@@ -45,7 +45,7 @@ input[type="radio"].visually-hidden {
 }
 
 /* стилизация хедера */
-.main-header {
+.header-up {
   width: 1200px;
   min-height: 320px;
   background-color: #f3f7f9;
@@ -154,7 +154,7 @@ input[type="radio"].visually-hidden {
 
 .store-info {
   display: flex;
-  width: 960px;
+  width: 1060px;
   min-height: 108px;
   padding-left: 130px;
   justify-content: space-between;
@@ -193,6 +193,12 @@ input[type="radio"].visually-hidden {
   color: #32425c;
 }
 
+.user-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
 .user {
   font-size: 21px;
   line-height: 18px;
@@ -200,10 +206,35 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.user-navigation {
-  display: flex;
-  justify-content: space-between;
-  align-self: center;
+.user-name {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 45px;
+  margin-top: -20px;
+  margin-right: -80px;
+  font-size: 21px;
+  line-height: 18px;
+  padding-top: 10px;
+  background-color: #ffffff;
+}
+
+.user-nav {
+  width: 300px;
+  min-height: 30px;
+  margin-top: -18px;
+  margin-left: 30px;
+  padding-left: 20px;
+
+
+}
+
+.user-nav a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-transform: none;
+  text-decoration: underline;
 }
 
 .user-navigation li {
@@ -991,4 +1022,8 @@ color: #ffffff;
   min-height: 40px;
   display: flex;
   justify-content: space-between;
+}
+
+.modal {
+  display: none;
 }
