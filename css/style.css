@@ -375,6 +375,44 @@ input[type="radio"].visually-hidden {
   min-height: 1470px;
   display: flex;
 }
+/* стилизация блоков фильтр и сортировка в каталоге */
+
+.catalog-part {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filter {
+  width: 220px;
+  min-height: 750px;
+  margin-right: 20px;
+  border: 1px solid #ffffff;
+}
+
+fieldset {
+  border: none;
+}
+
+.caption {
+  background-color: #f7f3ec;
+}
+
+.price-field {
+  background-color: #f7f3ec;
+  border: none;
+}
+
+.catalog legend {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  color: #000000;
+}
+
 
 .filter-form {
   display: flex;
@@ -383,7 +421,7 @@ input[type="radio"].visually-hidden {
 
 .filter-price {
   display: flex;
-  margin: -19px 0 0 -12px;
+  margin: -19px 0 -12px -12px;
 }
 
 .filter-title {
@@ -448,7 +486,34 @@ input[type="radio"].visually-hidden {
 
 .filter-manufacturers {
   width: auto;
+  display: flex;
+  flex-direction: column;
+}
 
+.legend-manufacturers {
+  margin-left: -13px;
+  margin-bottom: 15px;
+}
+
+.filter-manufacturers-container {
+  width: 220px;
+  min-height: 202px;
+  margin-left: -13px;
+  margin-bottom: -10px;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.filter-manufacturers-list {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 22px;
+}
+
+.filter-power {
+  width: 220px;
+  min-height: 110px;
 }
 
 .sort-caption {
@@ -459,43 +524,6 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
-/* стилизация блоков фильтр и сортировка в каталоге */
-
-.catalog-part {
-  font-family: 'PT Sans', sans-serif;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 18px;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.filter {
-  width: 220px;
-  min-height: 750px;
-  margin-right: 20px;
-  border: 1px solid #ffffff;
-}
-
-fieldset {
-  border: none;
-}
-
-.caption {
-  background-color: #f7f3ec;
-}
-
-.price-field {
-  background-color: #f7f3ec;
-  border: none;
-}
-
-.catalog legend {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 30px;
-  color: #000000;
-}
 
 /* стилизация блока промо */
 
