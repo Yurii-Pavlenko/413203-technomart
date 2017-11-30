@@ -96,11 +96,12 @@
   </header>
   <div class="catalog-container">
     <div class="catalog-wrapper">
-      <section class="catalog-part">
+      <section class="catalog-part filter">
         <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
-          <h2 class="catalog-part caption">Фильтр:</h2>
+          <h2 class="catalog-part-caption">Фильтр:</h2>
           <fieldset class="filter-price">
-            <legend class="filter-price-title">Цена:</legend>
+            <legend class="visually-hidden">Цена:</legend>
+            <div class="filter-title legend-price">Цена:</div>
             <div class="filter-price-range">
               <label class="caption">
                 <input type="range" name="price-min">
@@ -111,12 +112,13 @@
             </div>
             <div class="filter-price-diapason">
               <input class="price-field" type="text" name="price-min" title="" value="0">
-              <span class="filter-price-dash"> - </span>
+              <span class="filter-price-dash"> -- </span>
               <input class="price-field" type="text" name="price-max" title="" value="30000">
             </div>
           </fieldset>
           <fieldset class="filter-manufacturers">
-            <legend class="filter-manufacturers-title">Производители:</legend>
+            <legend class="visually-hidden">Производители:</legend>
+            <div class="filter-title legend-manufacturers">Производители:</div>
             <ul class="filter-manufacturers-list">
               <li class="filter-manufacturers-item">
                 <label class="filter-manufacturers-name">
@@ -151,7 +153,8 @@
             </ul>
           </fieldset>
           <fieldset class="filter-power">
-            <legend class="filter-power-title">Питание:</legend>
+            <legend class="visually-hidden">Питание:</legend>
+            <div class="filter-title legend-power">Питание:</div>
             <ul class="filter-power-list">
               <li class="filter-power-item">
                 <label class="filter-power-type">
@@ -171,8 +174,8 @@
         </form>
       </section>
 
-      <section class="catalog-part">
-        <header class="caption">
+      <section class="catalog-part sort">
+        <header class="sort-caption">
           <h2 class="catalog-part">Сортировка:</h2>
           <ul class="sort-list">
             <li class="sort-item">
