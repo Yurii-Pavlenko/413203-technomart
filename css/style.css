@@ -488,6 +488,7 @@ fieldset {
   width: auto;
   display: flex;
   flex-direction: column;
+  margin-bottom: 15px;
 }
 
 .legend-manufacturers {
@@ -514,6 +515,12 @@ fieldset {
 .filter-power {
   width: 220px;
   min-height: 110px;
+}
+
+.legend-power {
+  margin: 0;
+  padding: 0;
+  margin-left: -13px;
 }
 
 .sort-caption {
