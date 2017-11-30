@@ -570,6 +570,7 @@ fieldset {
 
 .sort-caption {
   display: flex;
+  margin-bottom: 10px;
 }
 
 .sort-caption-container {
@@ -582,7 +583,7 @@ fieldset {
 }
 
 .sort-list {
-  width: 468px;
+  width: 469px;
   height: 39px;
   display: flex;
   justify-content: flex-end;
@@ -769,9 +770,20 @@ fieldset {
   background-color: #ba2732;
 }
 
+.goods-list-container {
+  margin-left: -10px;
+}
+
 .goods-list {
   display: flex;
   margin-bottom: 20px;
+}
+
+.catalog-goods-list {
+  width: 750px;
+  min-height: 995px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .goods-list img {
@@ -896,6 +908,10 @@ fieldset {
 .goods {
   margin-bottom: 20px;
 }
+
+/*.manufacturers-header {
+  padding-left: -20px;
+}*/
 
 .manufacturers-list {
   width: 960px;
