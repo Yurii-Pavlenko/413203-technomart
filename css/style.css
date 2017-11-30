@@ -568,16 +568,50 @@ fieldset {
   color: #b8b8b8;
 }
 
-
 .sort-caption {
   display: flex;
 }
 
-.sort-list {
-  display: flex;
+.sort-caption-container {
+  margin-top: 11px;
+
 }
 
+.caption-sort {
+  width: 230px;
+}
 
+.sort-list {
+  width: 468px;
+  height: 39px;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  padding-top: 11px;
+  background-color: #f7f3ec;
+}
+
+.sort-item {
+  min-width: 11px;
+  min-height: 39px;
+  margin: 10px 15px 0 10px;
+}
+
+.sort-item:nth-child(5){
+   margin-left: 6px;
+ }
+
+.sort-item:nth-child(4){
+  margin-left: 30px;
+}
+
+.sort-item:nth-child(3){
+  margin-left: 50px;
+}
+
+.sort-item:nth-child(2){
+  margin-left: 57px;
+}
 /* стилизация блока промо */
 
 .container {
@@ -765,6 +799,8 @@ fieldset {
 }
 
 .sort-item a{
+  margin: 0;
+  padding: 0;
   color: #cacaca;
   border-bottom: 1px dotted #ee3643;
 }

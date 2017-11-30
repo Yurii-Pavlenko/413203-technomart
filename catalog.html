@@ -119,56 +119,60 @@
           <fieldset class="filter-manufacturers">
             <legend class="visually-hidden">Производители:</legend>
             <div class="filter-title legend-manufacturers">Производители:</div>
-            <ul class="filter-manufacturers-list">
-              <li class="filter-manufacturers-item">
-                <label class="filter-manufacturers-name">
-                  <input type="checkbox" name="bosch" checked>
-                  Bosch
-                </label>
-              </li>
-              <li class="filter-manufacturers-item">
-                <label class="filter-manufacturers-name">
-                  <input type="checkbox" name="interscol">
-                  Интерскол
-                </label>
-              </li>
-              <li class="filter-manufacturers-item">
-                <label class="filter-manufacturers-name">
-                  <input type="checkbox" name="makita" checked>
-                  Makita
-                </label>
-              </li>
-              <li class="filter-manufacturers-item">
-                <label class="filter-manufacturers-name">
-                  <input type="checkbox" name="dewalt">
-                  Dewalt
-                </label>
-              </li>
-              <li class="filter-manufacturers-item">
-                <label class="filter-manufacturers-name">
-                  <input type="checkbox" name="hitachi">
-                  Hitachi
-                </label>
-              </li>
-            </ul>
+            <div class="filter-manufacturers-container">
+              <ul class="filter-manufacturers-list">
+                <li class="filter-manufacturers-item filter-item">
+                  <label class="filter-manufacturers-name">
+                    <input class="visually-hidden" type="checkbox" name="bosch" checked>
+                    Bosch
+                  </label>
+                </li>
+                <li class="filter-manufacturers-item filter-item">
+                  <label class="filter-manufacturers-name">
+                    <input class="visually-hidden" type="checkbox" name="interscol">
+                    Интерскол
+                  </label>
+                </li>
+                <li class="filter-manufacturers-item filter-item">
+                  <label class="filter-manufacturers-name">
+                    <input class="visually-hidden" type="checkbox" name="makita" checked>
+                    Makita
+                  </label>
+                </li>
+                <li class="filter-manufacturers-item filter-item">
+                  <label class="filter-manufacturers-name">
+                    <input class="visually-hidden" type="checkbox" name="dewalt">
+                    Dewalt
+                  </label>
+                </li>
+                <li class="filter-manufacturers-item filter-item">
+                  <label class="filter-manufacturers-name">
+                    <input class="visually-hidden" type="checkbox" name="hitachi">
+                    Hitachi
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
           <fieldset class="filter-power">
             <legend class="visually-hidden">Питание:</legend>
             <div class="filter-title legend-power">Питание:</div>
-            <ul class="filter-power-list">
-              <li class="filter-power-item">
-                <label class="filter-power-type">
-                  <input type="radio" name="power-type" checked>
-                  Аккумуляторные
-                </label>
-              </li>
-              <li class="filter-power-item">
-                <label class="filter-power-type">
-                  <input type="radio" name="power-type">
-                  Сетевые
-                </label>
-              </li>
-            </ul>
+            <div class="filter-power-container">
+              <ul class="filter-power-list">
+                <li class="filter-power-item filter-item">
+                  <label class="filter-power-type">
+                    <input class="visually-hidden" type="radio" name="power-type" checked>
+                    Аккумуляторные
+                  </label>
+                </li>
+                <li class="filter-power-item filter-item">
+                  <label class="filter-power-type">
+                    <input class="visually-hidden" type="radio" name="power-type">
+                    Сетевые
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
           <button type="submit" class="btn-filter">Показать</button>
         </form>
@@ -176,24 +180,32 @@
 
       <section class="catalog-part sort">
         <header class="sort-caption">
-          <h2 class="catalog-part">Сортировка:</h2>
-          <ul class="sort-list">
-            <li class="sort-item">
-              <a class="sort-link active" href="#">По цене</a>
-            </li>
-            <li class="sort-item">
-              <a class="sort-link" href="#">По типу</a>
-            </li>
-            <li class="sort-item">
-              <a class="sort-link" href="#">По функционалу</a>
-            </li>
-            <li class="sort-item">
-              <a class="sort-up-triangle active" href="#" aria-label="Сортировка по возрастанию"></a>
-            </li>
-            <li class="sort-item">
-              <a class="sort-down-triangle" href="#" aria-label="Сортировка по убыванию"></a>
-            </li>
-          </ul>
+          <h2 class="catalog-part-caption caption-sort">Сортировка:</h2>
+          <div class="sort-caption-container">
+            <ul class="sort-list">
+              <li class="sort-item">
+                <a class="sort-link active" href="#">По цене</a>
+              </li>
+              <li class="sort-item">
+                <a class="sort-link" href="#">По типу</a>
+              </li>
+              <li class="sort-item">
+                <a class="sort-link" href="#">По функционалу</a>
+              </li>
+            <!--</ul>
+            <ul class="sort-list sublist">-->
+              <li class="sort-item">
+                <a class="sort-up-triangle active" href="#" aria-label="Сортировка по возрастанию">
+                  <img src="img/decor/icon-up-dir.svg" width="11" height="10">
+                </a>
+              </li>
+              <li class="sort-item">
+                <a class="sort-down-triangle" href="#" aria-label="Сортировка по убыванию">
+                  <img src="img/decor/icon-down-triangle.svg" width="11" height="10">
+                </a>
+              </li>
+            </ul>
+          </div>
         </header>
         <ul class="goods-list">
           <li>
