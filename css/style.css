@@ -512,6 +512,11 @@ fieldset {
   padding-bottom: 22px;
 }
 
+.filter-item {
+  width: auto;
+  min-height: 40px;
+}
+
 .filter-power {
   width: 220px;
   min-height: 110px;
@@ -521,7 +526,48 @@ fieldset {
   margin: 0;
   padding: 0;
   margin-left: -13px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
 }
+
+.filter-power-container {
+  width: auto;
+  min-height: 67px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: -13px;
+  margin-bottom: 49px;
+}
+
+.filter-power-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.btn-filter {
+  width: 140px;
+  min-height: 39px;
+  border: 1px solid #c5c5c5;
+  background-color: #ffffff;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.btn-filter:hover,
+.btn-filter:focus {
+  border-color: #b5b5b5;
+  color: #b8b8b8;
+}
+
+.btn-filter:active {
+  border-color: #e9e9e9;
+  color: #b8b8b8;
+}
+
 
 .sort-caption {
   display: flex;
