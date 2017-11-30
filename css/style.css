@@ -368,6 +368,7 @@ input[type="radio"].visually-hidden {
 .catalog-container {
   display: flex;
   flex-direction: column;
+  margin-bottom: -258px;
 }
 
 .catalog-wrapper {
@@ -388,9 +389,7 @@ input[type="radio"].visually-hidden {
 
 .filter {
   width: 220px;
-  min-height: 750px;
   margin-right: 20px;
-  border: 1px solid #ffffff;
 }
 
 fieldset {
@@ -772,6 +771,7 @@ fieldset {
 
 .goods-list-container {
   margin-left: -10px;
+  margin-bottom: 52px;
 }
 
 .goods-list {
@@ -934,12 +934,29 @@ fieldset {
   margin-bottom: 67px;
 }
 
+.sort-footer {
+  display: flex;
+}
+
 .sort-footer a {
+  margin: 0;
+  padding: 0;
+  min-width: 37px;
+  min-height: 37px;
+  margin-right: 10px;
+  text-align: center;
+  padding-top: 7px;
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
   border: 1px solid #e5e5e5;
+}
+
+.next {
+  width: 140px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .sort-footer a:hover,
@@ -954,6 +971,37 @@ fieldset {
 .sort-footer .current {
   color: #ffffff;
   background-color: #ee3643;
+}
+
+.catalog-tale {
+  width: 1200px;
+  min-height: 263px;
+  margin-left: -130px;
+  padding-top: 69px;
+  padding-left: 130px;
+  background-color: #f2f6f8;
+}
+
+.tale-header h2 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cuprum', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 24px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+
+}
+
+.catalog-tale p {
+  margin: 0;
+  padding: 0;
+  width: 940px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 /* стилизация блока Сервисы, блоков О Компании и Контакты */
