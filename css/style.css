@@ -1222,7 +1222,6 @@ color: #ffffff;
 .footer-navigation {
   display: flex;
   justify-content: flex-start;
-  width: auto;
   min-height: 193px;
 
 /*  padding-left: 130px;*/
@@ -1283,7 +1282,6 @@ color: #ffffff;
   color: #998a6e;
 }
 .footer-contacts {
-  width: auto;
   min-height: 107px;
   display: flex;
   padding-top: 37px;
