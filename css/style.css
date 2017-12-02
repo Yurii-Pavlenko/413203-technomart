@@ -46,7 +46,7 @@ input[type="radio"].visually-hidden {
 
 /* стилизация хедера */
 .header-up {
-  width: 1200px;
+  width: 1280px;
   min-height: 320px;
   background-color: #f3f7f9;
   margin-bottom: 60px;
@@ -284,7 +284,7 @@ input[type="radio"].visually-hidden {
  }
 
  .site-navigation {
-   width: 940px;
+   width: auto;
    min-height: 60px;
    font-size: 17px;
    line-height: 17px;
@@ -368,14 +368,16 @@ input[type="radio"].visually-hidden {
 
 /* стилизация основной части страницы каталога  */
 
+/*
 .catalog-container {
   display: flex;
   flex-direction: column;
   margin-bottom: -258px;
 }
+*/
 
 .catalog-wrapper {
-  width: 940px;
+  width: auto;
   min-height: 1470px;
   display: flex;
 }
@@ -979,11 +981,9 @@ fieldset {
 }
 
 .catalog-tale {
-  width: 1200px;
+  width: 1286px;
   min-height: 263px;
-  /*margin-left: -130px;*/
   padding-top: 69px;
-  /*padding-left: 130px;*/
   background-color: #f2f6f8;
 }
 
@@ -1196,7 +1196,7 @@ color: #ffffff;
 /* Стилизация футера */
 
 .main-footer {
-  width: 1200px;
+  width: 1917px;
   min-height: 300px;
 }
 
