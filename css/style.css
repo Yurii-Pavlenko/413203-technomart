@@ -66,10 +66,13 @@ input[type="radio"].visually-hidden {
 }
 
 .store-navigation {
-  display: flex;
-  width: 960px;
+  width: 1280px;
   min-height: 35px;
-  /*padding: 0 130px;*/
+  background-color: #293449;
+}
+
+.store-nav-container {
+  display: flex;
   margin-bottom: 49px;
   justify-content: space-between;
   font-size: 17px;
