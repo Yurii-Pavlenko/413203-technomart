@@ -69,7 +69,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   width: auto;
   min-height: 35px;
-  padding: 0 130px;
+  /*padding: 0 130px;*/
   margin-bottom: 49px;
   justify-content: space-between;
   font-size: 17px;
@@ -163,7 +163,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   width: 1060px;
   min-height: 108px;
-  padding-left: 130px;
+ /* padding-left: 130px;*/
   justify-content: space-between;
 }
 
@@ -294,7 +294,7 @@ input[type="radio"].visually-hidden {
  }
 
 .main-navigation {
-  padding-left: 130px;
+ /* padding-left: 130px;*/
 }
 
 .main-navigation li {
@@ -324,7 +324,7 @@ input[type="radio"].visually-hidden {
 .catalog {
   width: 940px;
   min-height: 60px;
-  padding-left: 130px;
+/*  padding-left: 130px;*/
 }
 
 .breadcrumbs {
@@ -615,7 +615,9 @@ fieldset {
 /* стилизация блока промо */
 
 .container {
-  padding-left: 130px;
+  width: 560px;
+  padding: 0 10px;
+  margin: auto;
 }
 
 .main-container ul,
@@ -976,9 +978,9 @@ fieldset {
 .catalog-tale {
   width: 1200px;
   min-height: 263px;
-  margin-left: -130px;
+  /*margin-left: -130px;*/
   padding-top: 69px;
-  padding-left: 130px;
+  /*padding-left: 130px;*/
   background-color: #f2f6f8;
 }
 
@@ -1010,7 +1012,7 @@ fieldset {
   width: 1200px;
   min-height: 520px;
   padding-top: 67px;
-  padding-left: 130px;
+  /*padding-left: 130px;*/
   background-color: #f4f8f9;
   margin-bottom: 83px;
 }
@@ -1105,7 +1107,7 @@ fieldset {
 }
 
 .delivery-slide img {
-  margin-top: -130px;
+ /* margin-top: -130px;*/
   margin-left: 150px;
 }
 
@@ -1219,7 +1221,7 @@ color: #ffffff;
   width: auto;
   min-height: 193px;
 
-  padding-left: 130px;
+/*  padding-left: 130px;*/
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
@@ -1281,7 +1283,7 @@ color: #ffffff;
   min-height: 107px;
   display: flex;
   padding-top: 37px;
-  padding-left: 130px;
+  /*padding-left: 130px;*/
   font-size: 18px;
   line-height: 16px;
   color: #ffffff;
