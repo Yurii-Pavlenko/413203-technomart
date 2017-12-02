@@ -67,7 +67,7 @@ input[type="radio"].visually-hidden {
 
 .store-navigation {
   display: flex;
-  width: auto;
+  width: 960px;
   min-height: 35px;
   /*padding: 0 130px;*/
   margin-bottom: 49px;
@@ -615,7 +615,7 @@ fieldset {
 /* стилизация блока промо */
 
 .container {
-  width: 560px;
+  width: 960px;
   padding: 0 10px;
   margin: auto;
 }
