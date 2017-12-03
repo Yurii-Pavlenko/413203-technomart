@@ -111,14 +111,6 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 5px #b52933;
 }
 
-
-/*
-
-.store-nav-link, .user {
-  text-transform: none;
-}
-*/
-
 .header-logo:hover,
 .header-logo:focus {
   background-color: #ca2c37;
@@ -328,7 +320,6 @@ input[type="radio"].visually-hidden {
 .user-name {
   margin: 0;
   padding: 0;
-  /*width: 300px;*/
   min-height: 45px;
   margin-top: -20px;
   margin-right: -80px;
@@ -713,10 +704,17 @@ fieldset {
 }
 
 .promo-goods a {
+  display: inline-block;
+  width: 135px;
+  height: auto;
+  text-align: center;
+  padding: 13px 0;
+  margin: 63px 0 0 25px;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
 }
 
 .promo-goods a:hover,
@@ -728,12 +726,26 @@ fieldset {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-
 .promo-item {
+  position: relative;
   width: 300px;
   min-height: 123px;
   margin-right: 20px;
+}
+
+.promo-item-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-item h3 {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  width: 150px;
+  height: 30px;
+  margin: 24px 22px;
+  font-weight: 400;
 }
 
 .promo-wrapper {
@@ -743,6 +755,59 @@ fieldset {
 
 .materials {
   background-color: #ffbf47;
+}
+
+.promo-item-title::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: -80px;
+  width: 44px;
+  height: 65px;
+  background: url("../img/decor/icon-materials.svg") no-repeat 0 0;
+}
+
+.instruments-title::after {
+  right: -110px;
+  width: 75px;
+  height: 61px;
+  background: url("../img/decor/icon-instruments.svg") no-repeat 0 0;
+}
+
+.machinery-title::after {
+  right: -100px;
+  width: 78px;
+  height: 62px;
+  background: url("../img/decor/icon-machinery.svg") no-repeat 0 0;
+}
+
+.discounts-title::after {
+  right: -90px;
+  width: 59px;
+  height: 72px;
+  background: url("../img/decor/icon-discounts.svg") no-repeat 0 0;
+}
+
+.delivery-title::after {
+  right: -100px;
+  width: 78px;
+  height: 63px;
+  background: url("../img/decor/icon-delivery.svg") no-repeat 0 0;
+}
+
+.materials .flag{
+  position: absolute;
+  top: -0.1px;
+  right: -0.1px;
+  width: 60px;
+  height: 60px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.materials .flag-new{
+  background: url("../img/decor/new-flag.png") no-repeat 0 0;
 }
 
 .instruments {
