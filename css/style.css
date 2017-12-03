@@ -703,7 +703,7 @@ fieldset {
   color: #ffffff;
 }
 
-.promo-goods a {
+.promo-item a {
   display: inline-block;
   width: 135px;
   height: auto;
@@ -830,6 +830,7 @@ fieldset {
 /* стилизация для слайдера */
 
 .punchers {
+
   background-image: url("../img/backgrounds/slide-punchrs.jpg");
   width: 620px;
   height: 266px;
@@ -842,6 +843,32 @@ fieldset {
   width: 620px;
   height: 266px;
   background-repeat: no-repeat;
+}
+
+.promo-slider {
+  position: relative;
+}
+
+.promo-slider label::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  width: 22px;
+  height: 40px;
+  background: url("../img/decor/icon-left.png") no-repeat 0 0;
+}
+
+.promo-slider label::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  width: 22px;
+  height: 40px;
+  background: url("../img/decor/icon-right.png") no-repeat 0 0;
+}
+
+.slider-wrapper {
+  padding: 25px 0 0 25px;
 }
 
 .slide-title {
@@ -857,16 +884,73 @@ fieldset {
   color: #ffffff;
 }
 
-.promo-slider a {
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-}
-
 .promo-container {
   margin-left: 20px;
   margin-bottom: 53px;
 }
+
+.button-slider {
+  display: inline-block;
+  width: 195px;
+  height: 39px;
+  font-family: 'Cuprum', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  padding-top: 10px;
+  color: #ffffff;
+  margin: 92px 0 0 25px;
+  background-color: #ee3643;
+  border-radius: 2px;
+}
+
+.button-slider:hover,
+.button-slider:focus {
+  background-color: #ca2c37;
+}
+
+.button-slider:active {
+  background-color: #ba2732;
+}
+
+.slider-switcher {
+  display: flex;
+  position: relative;
+  margin-top: -20px;
+  width: 1px;
+  height: 39px;
+ /* opacity: 0.1;*/
+}
+
+.slider-switcher::before {
+   content: "";
+   position: absolute;
+   padding-left: 10px;
+   top: -10px;
+   right: -295px;
+   width: 5px;
+   height: 15px;
+   border: 3px solid #ffffff;
+   border-radius: 50%;
+   background-color: #ee3643;
+
+ }
+
+.slider-switcher::after {
+  content: "";
+  position: absolute;
+  padding-right: 10px;
+  top: -10px;
+  right: -318px;
+  width: 5px;
+  height: 15px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  background-color: #ffffff;
+
+}
+
 /* стилизация блоков популярных товаров и популярных производителей */
 
 .popular h2,

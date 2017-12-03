@@ -78,7 +78,7 @@
               <div class="flag flag-new">новинка</div>
               <div class="promo-item-container">
                 <h3 class="promo-item-title materials-title">Материалы</h3>
-                <a class="button btn-materials" href="#">На любой вкус</a>
+                <a class="btn-materials" href="#">На любой вкус</a>
               </div>
             </div>
           </li>
@@ -86,7 +86,7 @@
             <div class="promo-item instruments">
               <div class="promo-item-container">
                 <h3 class="promo-item-title instruments-title">Инструменты</h3>
-                <a class="button btn-instruments" href="#">На все случаи</a>
+                <a class="btn-instruments" href="#">На все случаи</a>
               </div>
             </div>
           </li>
@@ -94,51 +94,62 @@
             <div class="promo-item machinery">
               <div class="promo-item-container">
                 <h3 class="promo-item-title machinery-title">Техника</h3>
-                <a class="button btn-machinery" href="#">Для стройки</a>
+                <a class="btn-machinery" href="#">Для стройки</a>
               </div>
             </div>
           </li>
         </ul>
+
         <div class="promo-wrapper">
           <div class="promo-slider">
             <div class="promo-slider punchers">
-              <h4 class="slide-title">Перфораторы</h4>
-              <p class="slide-text">Настоящие мужские игрушки</p>
-              <a class="prev" href="#" aria-label="Назад"> < </a>
+              <div class="slider-wrapper">
+                <h4 class="slide-title">Перфораторы</h4>
+                <p class="slide-text">Настоящие мужские игрушки</p>
+              </div>
+              <a class="visually-hidden prev" href="#" aria-label="Назад"></a>
               <label class="switch-slider punchers">
-                <input type="radio" name="switch-punchers" checked>
+                <input class="visually-hidden" type="radio" name="switch-punchers" checked>
               </label>
               <label class="switch-slider punchers">
-                <input type="radio" name="switch-punchers">
+                <input class="visually-hidden" type="radio" name="switch-punchers">
               </label>
-              <a class="next" href="#" aria-label="Вперед"> > </a>
-              <span class="button-red btn-catalog"><a href="#">Открыть каталог</a></span>
+              <a class="visually-hidden next" href="#" aria-label="Вперед"> > </a>
+              <a class="button-slider" href="#">Открыть каталог</a>
+              <div class="slider-switcher punchers">
+              </div>
             </div>
+
             <div class="promo-slider drills">
-              <h4 class="slide-title">Дрели</h4>
-              <p class="slide-text">Соседям на радость!</p>
-              <a class="prev" href="#" aria-label="Назад"> < </a>
+              <div class="slider-wrapper">
+                <h4 class="slide-title">Дрели</h4>
+                <p class="slide-text">Соседям на радость!</p>
+              </div>
+              <a  class="visually-hidden prev" href="#" aria-label="Назад"></a>
               <label class="switch-slider drills">
-                <input type="radio" name="switch-drills">
+                <input class="visually-hidden" type="radio" name="switch-drills">
               </label>
               <label class="switch-slider drills">
-                <input type="radio" name="switch-drills" checked>
+                <input class="visually-hidden" type="radio" name="switch-drills" checked>
               </label>
-              <a class="next" href="#" aria-label="Вперед"> > </a>
-              <span class="button-red btn-catalog"><a href="#">Открыть каталог</a></span>
+              <a class="visually-hidden next" href="#" aria-label="Вперед"></a>
+              <a class="button-slider" href="#">Открыть каталог</a>
+              <div class="slider-switcher drills">
+              </div>
             </div>
           </div>
+
           <div class="promo-container">
             <div class="promo-item discounts">
               <div class="promo-item-container">
                 <h3 class="promo-item-title discounts-title">Скидки 50%</h3>
-                <a class="button btn-discounts" href="#">На 350 товаров</a>
+                <a class="btn-discounts" href="#">На 350 товаров</a>
               </div>
             </div>
             <div class="promo-item delivery">
               <div class="promo-item-container">
                 <h3 class="promo-item-title delivery-title">Доставка</h3>
-                <a class="button btn-delivery" href="#">Бесплатно</a>
+                <a class="btn-delivery" href="#">Бесплатно</a>
               </div>
             </div>
           </div>
