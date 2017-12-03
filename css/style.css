@@ -143,9 +143,13 @@ input[type="radio"].visually-hidden {
   height: 23px;
 }
 
-.search-label:hover::before,
+.search-label:hover::before {
+  background-image: url("../img/decor/icon-search-hover.svg");
+}
+
 .search-label:focus::before {
   background-image: url("../img/decor/icon-search-focus.svg");
+  background-color: #ffffff;
 }
 
 .store-nav-icon {
@@ -1595,9 +1599,32 @@ color: #ffffff;
 }
 
 .footer-social a{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: -20px 5px 0 80px;
+  text-align: center;
+  vertical-align: middle;
   color: #ffffff;
+  background: url("../img/decor/vk-icon.png") no-repeat 6px 11px;
   background-color: #212a3a;
+  border-radius: 50%;
 }
+
+.footer-social .facebook {
+  margin-left: 5px;
+  background: url("../img/decor/fb-icon.png") no-repeat 13px 8px;
+  background-color: #212a3a;
+  border-radius: 50%;
+}
+
+.footer-social .insta {
+  margin-left: 5px;
+  background: url("../img/decor/insta-icon.png") no-repeat 13px 8px;
+  background-color: #212a3a;
+  border-radius: 50%;
+}
+
 
 .footer-social a:hover,
 .footer-social a:focus,
