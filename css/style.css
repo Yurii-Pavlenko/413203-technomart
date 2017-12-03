@@ -795,7 +795,7 @@ fieldset {
   background: url("../img/decor/icon-delivery.svg") no-repeat 0 0;
 }
 
-.materials .flag{
+.flag{
   position: absolute;
   top: -0.1px;
   right: -0.1px;
@@ -806,7 +806,7 @@ fieldset {
   z-index: 20;
 }
 
-.materials .flag-new{
+.flag-new{
   background: url("../img/decor/new-flag.png") no-repeat 0 0;
 }
 
@@ -920,7 +920,6 @@ fieldset {
   margin-top: -20px;
   width: 1px;
   height: 39px;
- /* opacity: 0.1;*/
 }
 
 .slider-switcher::before {
@@ -1003,6 +1002,13 @@ fieldset {
   margin-bottom: 52px;
 }
 
+/* стилизация карточки товара  */
+
+.catalog-items{
+  width:700px;
+  margin:20px auto;
+}
+
 .goods-list {
   display: flex;
   margin-bottom: 20px;
@@ -1025,11 +1031,13 @@ fieldset {
 }
 
 .goods-item {
+  position: relative;
+  display: inline-block;
   width: 220px;
   min-height: 318px;
-  margin: 0 10px;
-  background-color: #ffffff;
+  margin: 10px;
   border: 1px solid #eaeaea;
+  text-align: center;
   transition: transform 0.4s ease-out;
 }
 
@@ -1058,11 +1066,11 @@ fieldset {
 
 .buttons {
   width: 180px;
-  height: 160px;
+  height: 167px;
   display: none;
 }
 .goods-item:hover .buttons {
-  display: block;
+  display: inline-block;
 }
 
 .goods-item:hover img {
@@ -1073,29 +1081,41 @@ fieldset {
   transform: scale(1.01);
 }*/
 
-.goods-item .buy {
+.buttons a{
+  display: inline-block;
+  width: 135px;
+  height: 35px;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.buy {
   color: #ffffff;
   background-color: #63a63e;
   border-bottom: 3px solid #367315;
+  margin-top: 42px;
+  padding-top: 10px;
 }
 
-.goods-item .buy:hover,
-.goods-item .buy:focus {
+.buy:hover,
+.buy:focus {
   background-color: #5fbb2d;
 }
 
-.goods-item .buy:active {
+.buy:active {
   background-color: #518534;
   border-bottom: 3px solid #518534;
 }
 
-.goods-item .bookmark {
+.bookmark {
   color: #32425c;
   border: 3px solid #63a63e;
+  padding-top: 7px;
+  margin-top: 10px;
 }
 
-.goods-item .bookmark:hover,
-.goods-item .bookmark:focus {
+.bookmark:hover,
+.bookmark:focus {
   border-color: #32425c;
 }
 
@@ -1110,11 +1130,16 @@ fieldset {
   font-weight: 700;
 }
 
-.goods-item h3 {
+.name-item {
+  min-height:40px;
+  padding:0 25px;
+  margin-top:10px;
+  margin-bottom:15px;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
 }
+
 
 .goods-item p {
   font-size: 17px;
@@ -1122,6 +1147,9 @@ fieldset {
 }
 
 .old-price {
+  min-height:20px;
+  margin-top:15px;
+  margin-bottom:10px;
   color: #aaaaaa;
   text-decoration: line-through;
 }
@@ -1130,8 +1158,25 @@ fieldset {
 }
 
 .new-price {
+  position:relative;
+  width:140px;
+  margin:10px auto;
+  margin-bottom:20px;
+  padding:10px 30px;
+  border-radius:3px;
   color: #ffffff;
   background-color: #ee3643;
+}
+
+.new-price:after{
+  content:"";
+  position:absolute;
+  top:0;
+  right:-19px;
+  width:0;
+  height:0;
+  border:19px solid white;
+  border-left-color:#ee3643;
 }
 
 .goods {
