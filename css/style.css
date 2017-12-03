@@ -986,6 +986,7 @@ fieldset {
   line-height: 18px;
   color: #ffffff;
   background-color: #ee3643;
+  border-radius: 3px;
 }
 
 .button-red:hover,
@@ -1191,10 +1192,12 @@ fieldset {
 }
 
 .manufacturers-item {
+  display: inline-block;
   width: 215px;
   min-height: 145px;
+  text-align: center;
+  vertical-align: middle;
   margin: 0 20px 20px 0;
-  background-color: #ffffff;
   border: 1px solid #eaeaea;
   flex-grow: 1;
 }
@@ -1430,7 +1433,31 @@ color: #ffffff;
   background-repeat: no-repeat;
 }
 
+.transport-list {
+  position: relative;
+
+}
+
+.transport-item::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -5px;
+  width: 30px;
+  height: 2px;
+  background-color: #ee3643;
+}
+
+.transport-item:nth-child(2)::before {
+  top: 50px;
+}
+
+.transport-item:nth-child(3)::before {
+  top: 90px;
+}
+
 .transport-item {
+  padding-left: 32px;
   font-size: 18px;
   line-height: 20px;
   margin-bottom: 20px;
