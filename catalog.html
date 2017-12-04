@@ -7,10 +7,6 @@
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <style type="text/css">
-    .user-name {
-    }
-  </style>
 </head>
 <body>
 <header class="header-up catalog-header">
@@ -26,8 +22,8 @@
           </label>
         </form>
       </div>
-      <a class="store-nav-link header-bookmark" href="#">Закладки: 0</a>
-      <a class="store-nav-link header-cort" href="#">Корзина: 10</a>
+      <a class="store-nav-link store-nav-icon" href="#">Закладки: 0</a>
+      <a class="store-nav-link store-nav-icon header-cart full" href="#">Корзина: 10</a>
       <a class="store-nav-link header-order" href="#">Оформить заказ</a>
     </div>
   </section>
@@ -41,9 +37,10 @@
     <div class="user-container">
       <ul class="user-navigation">
         <li>
-          <p class="user-name">Равшан Джамшутович</p>
+          <a class="user-name">Равшан Джамшутович</a>
         </li>
-        <li class="user-logout"><a href="#"></a></li>
+        <li class="user-nav-wrapper"><a class="user-logout" href="#"><span class="visually-hidden">Выход из личного кабинета</span> <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><g fill="#c5c5c5"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg></a>
+        </li>
       </ul>
       <div class="user-nav">
         <a href="#">Мои заказы</a>
@@ -85,7 +82,7 @@
     <header class="catalog-header">
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="#">Каталог</a>
+          <a class="breadcrumbs-link first" href="#">Каталог</a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="#">Инструмент</a>
@@ -106,15 +103,12 @@
             <div class="filter-title legend-price">Цена:</div>
             <div class="filter-price-range">
               <label class="caption">
-                <input type="range" name="price-min">
-              </label>
-              <label class="caption">
-                <input type="range" name="price-max">
+                <input class="visually-hidden" type="range" name="price-min">
               </label>
             </div>
             <div class="filter-price-diapason">
               <input class="price-field" type="text" name="price-min" title="" value="0">
-              <span class="filter-price-dash"> -- </span>
+              <span class="filter-price-dash"></span>
               <input class="price-field" type="text" name="price-max" title="" value="30000">
             </div>
           </fieldset>
@@ -124,31 +118,31 @@
             <div class="filter-manufacturers-container">
               <ul class="filter-manufacturers-list">
                 <li class="filter-manufacturers-item filter-item">
-                  <label class="filter-manufacturers-name">
+                  <label class="filter-label checked">
                     <input class="visually-hidden" type="checkbox" name="bosch" checked>
                     Bosch
                   </label>
                 </li>
                 <li class="filter-manufacturers-item filter-item">
-                  <label class="filter-manufacturers-name">
+                  <label class="filter-label">
                     <input class="visually-hidden" type="checkbox" name="interscol">
                     Интерскол
                   </label>
                 </li>
                 <li class="filter-manufacturers-item filter-item">
-                  <label class="filter-manufacturers-name">
+                  <label class="filter-label checked">
                     <input class="visually-hidden" type="checkbox" name="makita" checked>
                     Makita
                   </label>
                 </li>
                 <li class="filter-manufacturers-item filter-item">
-                  <label class="filter-manufacturers-name">
+                  <label class="filter-label">
                     <input class="visually-hidden" type="checkbox" name="dewalt">
                     Dewalt
                   </label>
                 </li>
                 <li class="filter-manufacturers-item filter-item">
-                  <label class="filter-manufacturers-name">
+                  <label class="filter-label">
                     <input class="visually-hidden" type="checkbox" name="hitachi">
                     Hitachi
                   </label>
@@ -162,13 +156,13 @@
             <div class="filter-power-container">
               <ul class="filter-power-list">
                 <li class="filter-power-item filter-item">
-                  <label class="filter-power-type">
+                  <label class="filter-label on">
                     <input class="visually-hidden" type="radio" name="power-type" checked>
                     Аккумуляторные
                   </label>
                 </li>
                 <li class="filter-power-item filter-item">
-                  <label class="filter-power-type">
+                  <label class="filter-label off">
                     <input class="visually-hidden" type="radio" name="power-type">
                     Сетевые
                   </label>
@@ -196,7 +190,7 @@
               </li>
               <li class="sort-item">
                 <a class="sort-up-triangle active" href="#" aria-label="Сортировка по возрастанию">
-                  <img src="img/decor/icon-up-dir.svg" width="11" height="10">
+                    <img src="img/decor/icon-up-dir.svg" width="11" height="10">
                 </a>
               </li>
               <li class="sort-item">
