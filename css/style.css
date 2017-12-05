@@ -627,7 +627,7 @@ fieldset {
   background: url("../img/decor/radio-on.svg") no-repeat 0 0;
 }
 
-.filter-power-type{
+.filter-power-type {
   position: relative;
   padding-left: 30px;
 }
@@ -672,7 +672,7 @@ fieldset {
   padding-top: 10px;
 }
 
-.filter-price-dash::after{
+.filter-price-dash::after {
   content: "";
   position: absolute;
   top: 20px;
@@ -917,7 +917,7 @@ fieldset {
   background: url("../img/decor/icon-delivery.svg") no-repeat 0 0;
 }
 
-.flag{
+.flag {
   position: absolute;
   top: -0.1px;
   right: -0.1px;
@@ -928,7 +928,7 @@ fieldset {
   z-index: 20;
 }
 
-.flag-new{
+.flag-new {
   background: url("../img/decor/new-flag.png") no-repeat 0 0;
 }
 
@@ -1078,7 +1078,7 @@ fieldset {
   padding: 0;
 }
 
-.title{
+.title {
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -1125,7 +1125,7 @@ fieldset {
 
 /* стилизация карточки товара  */
 
-.catalog-items{
+.catalog-items {
   width:700px;
   margin:20px auto;
 }
@@ -1167,7 +1167,7 @@ fieldset {
   line-height: 18px;
 }
 
-.sort-item a{
+.sort-item a {
   margin: 0;
   padding: 0;
   color: #cacaca;
@@ -1292,7 +1292,7 @@ fieldset {
   background-color: #ee3643;
 }
 
-.new-price:after{
+.new-price:after {
   content:"";
   position:absolute;
   top:0;
@@ -1698,7 +1698,7 @@ fieldset {
   color: #ee3643;
 }
 
-.footer-social a{
+.footer-social a {
   display: inline-block;
   width: 40px;
   height: 40px;
