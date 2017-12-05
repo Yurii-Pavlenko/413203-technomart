@@ -28,39 +28,36 @@ img {
 .feedback ul { list-style: none }
 .feedback p { margin-bottom: 0 }
 
-html { box-sizing: border-box; }
-*, *::before, *::after { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 /* стилизация хедера */
+
 .header-up {
   min-height: 320px;
   background-color: #f3f7f9;
   margin-bottom: 60px;
 }
-
-/*.catalog-header {
-  display: flex;
-  flex-direction: column;
-
-}*/
 
 .main-header ul,
 .catalog-header ul {
@@ -86,11 +83,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
 }
-/*
-.store-navigation a {
-  padding-top: 10px;
-  color: #ffffff;
-}*/
 
 .logo {
   margin: 0;
@@ -127,7 +119,6 @@ input[type="radio"].visually-hidden {
   display: block;
   padding: 8px 5px 7px 20px;
   position: relative;
-
 }
 
 .search-label::before {
@@ -205,7 +196,6 @@ input[type="radio"].visually-hidden {
 }
 
 .search-header input {
-
   background-color: #293449;
   border: none;
 }
@@ -219,7 +209,6 @@ input[type="radio"].visually-hidden {
   display: block;
   position: relative;
   padding: 10px 20px;
-
   color: #ffffff;
   background-color: #63a63e;
   text-transform: none;
@@ -234,7 +223,6 @@ input[type="radio"].visually-hidden {
   color: #aac39b;
   background-color: #518534;
 }
-
 
 .store-info {
   display: flex;
@@ -273,7 +261,6 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   left: 12px;
-
   width: 25px;
   height: 25px;
   background-image: url("../img/decor/icon-phone.svg");
@@ -298,7 +285,6 @@ input[type="radio"].visually-hidden {
 .user-nav-wrapper {
   margin-top: -10px;
   margin-left: -15px;
-
 }
 
 .user-login-li {
@@ -359,7 +345,6 @@ input[type="radio"].visually-hidden {
   background: url("../img/decor/icon-user.svg") no-repeat 17px 10px;
   background-color: #ffffff;
 }
-
 
 .user-name:hover,
 .user-name:focus {
@@ -425,34 +410,34 @@ input[type="radio"].visually-hidden {
   color: #b2b2b2;
 }
 
- .user-link a {
+.user-link a {
    font-size: 16px;
    line-height: 18px;
    color: #32425c;
    text-decoration: underline;
- }
+}
 
- .user-link a:hover,
- .user-link a:focus {
-   color: #ee3643;
- }
+.user-link a:hover,
+.user-link a:focus {
+  color: #ee3643;
+}
 
- .user-link a:active {
-   color: #b7bfc8;
- }
+.user-link a:active {
+ color: #b7bfc8;
+}
 
- .site-navigation {
-   width: auto;
-   min-height: 60px;
-   font-size: 17px;
-   line-height: 17px;
-   color: #ffffff;
-   background-color: #32425c;
-   border-bottom: 5px solid #293449;
-   display: flex;
-   justify-content: space-around;
-   flex-wrap: wrap;
- }
+.site-navigation {
+  width: auto;
+  min-height: 60px;
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+  background-color: #32425c;
+  border-bottom: 5px solid #293449;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
 .nav-link a {
   display: block;
@@ -474,7 +459,6 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs {
   display: flex;
-
 }
 
 .breadcrumbs-item {
@@ -500,7 +484,6 @@ input[type="radio"].visually-hidden {
   left: 0;
   width: 20px;
   height: 15px;
-
   background: url("../img/decor/icon-right-small.png") no-repeat 0 3px;
 }
 
@@ -513,7 +496,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
   min-height: 90px;
   margin-top: 10px;
-
   padding-top: 31px;
   padding-left: 28px;
   font-weight: 400;
@@ -522,7 +504,6 @@ input[type="radio"].visually-hidden {
   color: #32425c;
   background-color: #f2f6f8;
   text-transform: uppercase;
-
 }
 
 /* стилизация основной части страницы каталога  */
@@ -601,9 +582,7 @@ fieldset {
 
 .filter-item label {
   position: relative;
-
   display: block;
-
   cursor: pointer;
   user-select: none;
 }
@@ -648,24 +627,10 @@ fieldset {
   background: url("../img/decor/radio-on.svg") no-repeat 0 0;
 }
 
-/*.checked::before{
-  background: url("../img/decor/radio-on.svg") no-repeat 0 0;
-}*/
-
 .filter-power-type{
   position: relative;
   padding-left: 30px;
 }
-
-/*.off::before {
-
-  background: url("../img/decor/radio-off.svg") no-repeat 0 0;
-}
-
-.on::before {
-
-  background: url("../img/decor/radio-on.svg") no-repeat 0 0;
-}*/
 
 .catalog-part-caption {
   width: auto;
@@ -689,7 +654,6 @@ fieldset {
   font-size: 17px;
   line-height: 18px;
   border-bottom: 1px solid #c5c5c5;
-
 }
 
 .filter-price-diapason input {
@@ -802,7 +766,6 @@ fieldset {
 
 .sort-caption-container {
   margin-top: 11px;
-
 }
 
 .caption-sort {
@@ -839,6 +802,7 @@ fieldset {
 .sort-item:nth-child(2){
   margin-left: 57px;
 }
+
 /* стилизация блока промо */
 
 .container {
@@ -1091,7 +1055,6 @@ fieldset {
    border: 3px solid #ffffff;
    border-radius: 50%;
    background-color: #ee3643;
-
  }
 
 .slider-switcher::after {
@@ -1105,7 +1068,6 @@ fieldset {
   border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   background-color: #ffffff;
-
 }
 
 /* стилизация блоков популярных товаров и популярных производителей */
@@ -1243,10 +1205,6 @@ fieldset {
   display: none;
 }
 
-/*.goods-item:hover {
-  transform: scale(1.01);
-}*/
-
 .buttons a{
   display: inline-block;
   width: 135px;
@@ -1306,7 +1264,6 @@ fieldset {
   color: #000000;
 }
 
-
 .goods-item p {
   font-size: 17px;
   line-height: 18px;
@@ -1319,6 +1276,7 @@ fieldset {
   color: #aaaaaa;
   text-decoration: line-through;
 }
+
 .no-price {
   color: #ffffff;
 }
@@ -1362,7 +1320,6 @@ fieldset {
   align-items: center;
   width: 215px;
   min-height: 145px;
-
   margin: 0 20px 20px 0;
   border: 1px solid #eaeaea;
   flex-grow: 1;
@@ -1426,7 +1383,6 @@ fieldset {
   line-height: 24px;
   margin-bottom: 30px;
   text-transform: uppercase;
-
 }
 
 .catalog-tale p {
@@ -1576,7 +1532,7 @@ fieldset {
   background-color: #293449;
 }
 
-.services-input:checked .services-label {
+.services-input:checked + .services-label {
   color: #32425c;
   background-color: #ffffff;
   border-top-color: #ffffff;
@@ -1593,7 +1549,6 @@ fieldset {
 
 .transport-list {
   position: relative;
-
 }
 
 .transport-item::before {
@@ -1686,10 +1641,6 @@ fieldset {
   justify-content: space-between;
 }
 
-.nav-container h2 {
-
-}
-
 .footer-nav-list a {
   color: #f1f5f7;
   text-transform: none;
@@ -1714,6 +1665,7 @@ fieldset {
 .footer-subnav-list a:active {
   color: #998a6e;
 }
+
 .footer-contacts {
   background-color: #293449;
 }
