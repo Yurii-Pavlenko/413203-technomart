@@ -140,7 +140,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search:focus .search-label {
-  visibility: hidden;
+  display: none;
 }
 
 .search:focus .search-label::before {
@@ -201,12 +201,17 @@ input[type="radio"].visually-hidden {
   background-color: #161d29;
 }
 
-.search-header input {
+.search-header {
+  display: flex;
+}
+
+.search {
   background-color: #293449;
   border: none;
 }
 
-.search-header input:focus {
+.search:focus {
+  height: auto;
   color: #000000;
   background-color: #ffffff;
 }
