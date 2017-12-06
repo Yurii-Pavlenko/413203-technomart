@@ -952,44 +952,47 @@ fieldset {
 /* стилизация для слайдера */
 
 .punchers {
-
-  background-image: url("../img/backgrounds/slide-punchrs.jpg");
+  position: relative;
   width: 620px;
   height: 266px;
-  background-repeat: no-repeat;
 }
 
 .drills {
   display: none;
-  background-image: url("../img/backgrounds/slide-drills.jpg");
+  position: relative;
   width: 620px;
   height: 266px;
-  background-repeat: no-repeat;
 }
 
 .promo-slider {
   position: relative;
 }
 
-.promo-slider label::before {
+.slider-switcher::before {
   content: "";
   position: absolute;
+  top: -135px;
   left: 20px;
   width: 22px;
   height: 40px;
   background: url("../img/decor/icon-left.png") no-repeat 0 0;
 }
 
-.promo-slider label::after {
+.slider-switcher::after {
   content: "";
   position: absolute;
-  right: 20px;
+  top: -135px;
+  left: 580px;
   width: 22px;
   height: 40px;
   background: url("../img/decor/icon-right.png") no-repeat 0 0;
 }
 
+
 .slider-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
   padding: 25px 0 0 25px;
 }
 
@@ -1012,6 +1015,9 @@ fieldset {
 }
 
 .button-slider {
+  position: absolute;
+  top: 106px;
+  left: 0 ;
   display: inline-block;
   width: 195px;
   height: 39px;
@@ -1044,31 +1050,50 @@ fieldset {
   height: 39px;
 }
 
-.slider-switcher::before {
+.slider-radio-wrapper {
+  position: absolute;
+  top: 205px;
+  left: 290px;
+  width: 80px;
+  height: 40px;
+}
+
+.promo-slider-radiobox {
+  position: relative;
+  display: flex;
+}
+
+.switch-slider {
+  width: 10px;
+  height: 10px;
+}
+
+.switch-slider:nth-child(2) {
+  margin-right: 10px;
+}
+
+
+.promo-slider-radio:checked + .switch-slider::before {
    content: "";
    position: absolute;
    padding-left: 10px;
-   top: -10px;
-   right: -295px;
-   width: 5px;
-   height: 15px;
-   border: 3px solid #ffffff;
-   border-radius: 50%;
-   background-color: #ee3643;
+   top: 12px;
+   left: 0;
+   width: 10px;
+   height: 10px;
+   background: url("../img/decor/slider indicator.png") no-repeat 0 0;
  }
-
-.slider-switcher::after {
+/*
+.promo-slider-radio + label::before {
   content: "";
   position: absolute;
   padding-right: 10px;
-  top: -10px;
-  right: -318px;
+  top: 95px;
+  right: 0;
   width: 5px;
   height: 15px;
-  border: 3px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  background-color: #ffffff;
-}
+  background: url("../img/decor/slider dots.png") no-repeat 0 0;
+}*/
 
 /* стилизация блоков популярных товаров и популярных производителей */
 
