@@ -567,12 +567,58 @@ fieldset {
 
 .filter-price-range {
   display: block;
+  position: relative;
   width: 220px;
   min-height: 80px;
   margin-bottom: 3px;
-  background: url("../img/decor/filter-button.png") no-repeat 20px 30px;
   border-radius: 0 0 3px 3px;
   background-color: #f7f3ec;
+}
+
+.range-controls .scale {
+  position: absolute;
+  top: 39px;
+  left: 181px;
+
+  width: 20px;
+  height: 2px;
+
+  background-color: #d7dcde;
+}
+
+.range-controls .bar {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  width: 120px;
+  height: 2px;
+  background-color: #00ca74;
+}
+
+.range-toggle-max {
+   position: absolute;
+   top: 30px;
+   right: 40px;
+   width: 20px;
+   height: 20px;
+   background-color: #ababab;
+   border: 8px solid #ffffff;
+   border-radius: 50%;
+   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+   cursor: pointer;
+ }
+
+.range-toggle-min {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  width: 20px;
+  height: 20px;
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
 }
 
 .filter-item {
@@ -1268,9 +1314,17 @@ fieldset {
   border-color: #32425c;
 }
 
-.goods-item .bookmark:active {
+.bookmark:active {
   color: #c1c6ce;
   border-color: #c1c6ce;
+}
+
+.bookmark:active .header-bookmark {
+  background-color: #ee3643;
+}
+
+.bookmark:visited .header-bookmark {
+  background-color: #ee3643;
 }
 
 .goods-item h3,
