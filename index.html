@@ -455,7 +455,7 @@
           </p>
           <p class="footer-contacts-developer">
             Разработано —<br>
-            <a class="footer-contacts-link" href="#">htmlacademy.ru</a>
+            <a class="footer-contacts-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
         </div>
       </div>
@@ -466,23 +466,23 @@
     <button class="close-popup" type="button" aria-label="Закрыть карту"></button>
     <img src="img/content/map-popup.png" width="970" height="446" alt="Карта">
   </div>
-  <form class="modal modal-feedback" method="post" action="https://echo.htmlacademy.ru">
-    <button class="close-popup" type="button" aria-label="Закрыть форму"></button>
-    <fieldset class="visually hidden">
-      <legend class="visually hidden">Контакты пользователя</legend>
-      <label class="feedback-name">Ваше имя:
-        <input type="text" name="feedback-name-field" placeholder="Представьтесь, пожалуйста" required>
-      </label>
-      <label class="feedback-name">Ваш e-mail:
-        <input type="email" name="feedback-email-field" placeholder="Для отправки ответа" required>
-      </label>
-    </fieldset>
-    <fieldset class="visually hidden">
-      <label class="feedback-letter">Текст письма:
-        <textarea name="feedback-letter-field" placeholder="В свободной форме" required></textarea>
-      </label>
-    </fieldset>
-    <button class="btn bnt-feedback" type="submit">Отправить</button>
-  </form>
+  <div class="container">
+    <form class="modal modal-feedback" method="post" action="https://echo.htmlacademy.ru">
+      <button class="close-popup" type="button" aria-label="Закрыть форму"></button>
+      <fieldset class="visually hidden">
+        <legend class="visually hidden">Контакты пользователя</legend>
+        <label class="feedback-name" for="feedback-name">Ваше имя:</label>
+        <input type="text" name="feedback-name-field" id="feedback-name" placeholder="Представьтесь, пожалуйста" required>
+        <label class="feedback-name" for="feedback-email">Ваш e-mail:</label>
+        <input type="email" name="feedback-email-field" id="feedback-email" placeholder="Для отправки ответа" required>
+      </fieldset>
+      <fieldset class="visually hidden">
+        <label class="feedback-letter">Текст письма:
+          <textarea name="feedback-letter-field" placeholder="В свободной форме" required></textarea>
+        </label>
+      </fieldset>
+      <button class="btn bnt-feedback" type="submit">Отправить</button>
+    </form>
+  </div>
   </body>
 </html>

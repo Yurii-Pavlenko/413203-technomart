@@ -114,6 +114,20 @@ input[type="radio"].visually-hidden {
   border-bottom: 5px solid #8e1e26;
 }
 
+.search-header {
+  display: flex;
+}
+
+.search {
+  background-color: #293449;
+  border: none;
+}
+
+.search:focus {
+  height: auto;
+  color: #000000;
+  background-color: #ffffff;
+}
 
 .search-label {
   display: block;
@@ -125,13 +139,13 @@ input[type="radio"].visually-hidden {
 .search-label::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 0;
   left: -3px;
   background-image: url("../img/decor/icon-search.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0 10px;
   width: 25px;
-  height: 23px;
+  height: 30px;
   tab-index: 0;
 }
 
@@ -199,21 +213,6 @@ input[type="radio"].visually-hidden {
 .store-nav-link:active {
   color: #a2a5a9;
   background-color: #161d29;
-}
-
-.search-header {
-  display: flex;
-}
-
-.search {
-  background-color: #293449;
-  border: none;
-}
-
-.search:focus {
-  height: auto;
-  color: #000000;
-  background-color: #ffffff;
 }
 
 .header-order {
@@ -586,6 +585,10 @@ fieldset {
   background-color: #f7f3ec;
 }
 
+.range-controls {
+  min-height: 80px;
+}
+
 .range-controls .scale {
   position: absolute;
   top: 39px;
@@ -606,6 +609,8 @@ fieldset {
   background-color: #00ca74;
 }
 
+
+
 .range-toggle-max {
    position: absolute;
    top: 30px;
@@ -621,15 +626,18 @@ fieldset {
 
 .range-toggle-min {
   position: absolute;
+  display: block;
   top: 30px;
   left: 40px;
   width: 20px;
   height: 20px;
+  font-size:20px;
   background-color: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
+  flex-grow: 1;
 }
 
 .filter-item {
@@ -1838,4 +1846,19 @@ fieldset {
 
 .modal {
   display: none;
+  position: fixed;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.modal-feedback {
+  top: 20px;
+  left: 200px;
+
+  display: block;
+  width: 620px;
+  min-height: 430px;
+  margin: 0 auto;
+  padding: 0 70px;
+  border-top: 7px solid #ee3643;
 }
