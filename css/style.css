@@ -119,6 +119,7 @@ input[type="radio"].visually-hidden {
   display: block;
   padding: 8px 5px 7px 20px;
   position: relative;
+  tab-index: 0;
 }
 
 .search-label::before {
@@ -131,13 +132,18 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
   width: 25px;
   height: 23px;
+  tab-index: 0;
 }
 
 .search-label:hover::before {
   background-image: url("../img/decor/icon-search-hover.svg");
 }
 
-.search-label:focus::before {
+.search:focus .search-label {
+  visibility: hidden;
+}
+
+.search:focus .search-label::before {
   background-image: url("../img/decor/icon-search-focus.svg");
   background-color: #ffffff;
 }
