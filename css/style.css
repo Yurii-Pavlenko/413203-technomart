@@ -1880,6 +1880,7 @@ fieldset {
 }
 
 .modal-feedback {
+  display: none;
   top: 20px;
   left: 200px;
   min-height: 430px;
@@ -1983,4 +1984,13 @@ fieldset {
   text-transform: uppercase;
   border: none;
   border-radius: 3px;
+}
+
+.map-popup {
+  top: 20px;
+  left: 22px;
+}
+
+.map-popup .close-popup {
+  background-color: transparent;
 }
