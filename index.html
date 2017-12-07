@@ -466,14 +466,15 @@
     <button class="close-popup" type="button" aria-label="Закрыть карту"></button>
     <img src="img/content/map-popup.png" width="970" height="446" alt="Карта">
   </div>
-  <div class="container">
-    <form class="modal modal-feedback feedback-form" method="post" action="https://echo.htmlacademy.ru">
+
+    <form class="modal modal-feedback" id="feedback-form" method="post" action="https://echo.htmlacademy.ru">
+      <div class="feedback-form-container">
       <button class="close-popup" type="button" aria-label="Закрыть форму"></button>
       <fieldset class="visually hidden feedback-contacts">
         <legend class="visually hidden" aria-label="Контакты пользователя"></legend>
         <div class="feedback-container-contacts">
             <label class="feedback-name" for="feedback-name">Ваше имя:</label>
-            <label class="feedback-name" for="feedback-email">Ваш e-mail:</label>
+            <label class="feedback-email" for="feedback-email">Ваш e-mail:</label>
         </div>
         <div class="feedback-container">
           <input type="text" name="feedback-name-field" id="feedback-name" placeholder="Представьтесь, пожалуйста" required>
@@ -481,13 +482,15 @@
         </div>
       </fieldset>
       <fieldset class="visually hidden">
+        <label class="feedback-letter" for="feedback-letter">Текст письма:</label>
         <div class="feedback-container-text">
-            <label class="feedback-letter" for="feedback-letter">Текст письма:</label>
-            <textarea name="feedback-letter-field" placeholder="В свободной форме" id="feedback-letter" required></textarea>
+          <textarea name="feedback-letter-field" placeholder="В свободной форме" id="feedback-letter" required></textarea>
         </div>
       </fieldset>
-      <button class="btn bnt-feedback" type="submit">Отправить</button>
+      </div>
+      <div class="feedback-button">
+        <button class="btn bnt-feedback" type="submit" form="feedback-form">Отправить</button>
+      </div>
     </form>
-  </div>
   </body>
 </html>
