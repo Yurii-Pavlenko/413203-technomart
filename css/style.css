@@ -1866,7 +1866,7 @@ fieldset {
 /*  стилизация модальных окон  */
 
 .modal {
-
+  display: none;
   position: fixed;
   color: #000000;
   background-color: #ffffff;
@@ -1880,7 +1880,6 @@ fieldset {
 }
 
 .modal-feedback {
-
   top: 20px;
   left: 200px;
   min-height: 430px;
@@ -1989,7 +1988,6 @@ fieldset {
 /*  модальное окно для карты  */
 
 .map-popup {
-  display: none;
   top: 20px;
   left: 22px;
 }
