@@ -16,7 +16,7 @@
         <div class="store-nav-wrapper">
           <a class="logo header-logo" href="index.html">Техномарт</a>
           <form class="search-header" action="https://echo.htmlacademy.ru" method="post">
-            <label class="search-label" for="search">Поиск:</label>
+            <label class="search-label" for="search" tabindex="0">Поиск:</label>
             <input class="search" type="search" name="search" id="search">
           </form>
         </div>
@@ -471,14 +471,20 @@
       <button class="close-popup" type="button" aria-label="Закрыть форму"></button>
       <fieldset class="visually hidden feedback-contacts">
         <legend class="visually hidden" aria-label="Контакты пользователя"></legend>
-        <label class="feedback-name" for="feedback-name">Ваше имя:</label>
-        <input type="text" name="feedback-name-field" id="feedback-name" placeholder="Представьтесь, пожалуйста" required>
-        <label class="feedback-name" for="feedback-email">Ваш e-mail:</label>
-        <input type="email" name="feedback-email-field" id="feedback-email" placeholder="Для отправки ответа" required>
+        <div class="feedback-container-contacts">
+            <label class="feedback-name" for="feedback-name">Ваше имя:</label>
+            <label class="feedback-name" for="feedback-email">Ваш e-mail:</label>
+        </div>
+        <div class="feedback-container">
+          <input type="text" name="feedback-name-field" id="feedback-name" placeholder="Представьтесь, пожалуйста" required>
+          <input type="email" name="feedback-email-field" id="feedback-email" placeholder="Для отправки ответа" required>
+        </div>
       </fieldset>
       <fieldset class="visually hidden">
-        <label class="feedback-letter" for="feedback-letter">Текст письма:</label>
-        <textarea name="feedback-letter-field" placeholder="В свободной форме" id="feedback-letter" required></textarea>
+        <div class="feedback-container-text">
+            <label class="feedback-letter" for="feedback-letter">Текст письма:</label>
+            <textarea name="feedback-letter-field" placeholder="В свободной форме" id="feedback-letter" required></textarea>
+        </div>
       </fieldset>
       <button class="btn bnt-feedback" type="submit">Отправить</button>
     </form>
