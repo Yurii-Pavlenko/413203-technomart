@@ -467,19 +467,18 @@
     <img src="img/content/map-popup.png" width="970" height="446" alt="Карта">
   </div>
   <div class="container">
-    <form class="modal modal-feedback" method="post" action="https://echo.htmlacademy.ru">
+    <form class="modal modal-feedback feedback-form" method="post" action="https://echo.htmlacademy.ru">
       <button class="close-popup" type="button" aria-label="Закрыть форму"></button>
-      <fieldset class="visually hidden">
-        <legend class="visually hidden">Контакты пользователя</legend>
+      <fieldset class="visually hidden feedback-contacts">
+        <legend class="visually hidden" aria-label="Контакты пользователя"></legend>
         <label class="feedback-name" for="feedback-name">Ваше имя:</label>
         <input type="text" name="feedback-name-field" id="feedback-name" placeholder="Представьтесь, пожалуйста" required>
         <label class="feedback-name" for="feedback-email">Ваш e-mail:</label>
         <input type="email" name="feedback-email-field" id="feedback-email" placeholder="Для отправки ответа" required>
       </fieldset>
       <fieldset class="visually hidden">
-        <label class="feedback-letter">Текст письма:
-          <textarea name="feedback-letter-field" placeholder="В свободной форме" required></textarea>
-        </label>
+        <label class="feedback-letter" for="feedback-letter">Текст письма:</label>
+        <textarea name="feedback-letter-field" placeholder="В свободной форме" id="feedback-letter" required></textarea>
       </fieldset>
       <button class="btn bnt-feedback" type="submit">Отправить</button>
     </form>
