@@ -1880,7 +1880,7 @@ fieldset {
 }
 
 .modal-feedback {
-  display: none;
+
   top: 20px;
   left: 200px;
   min-height: 430px;
@@ -1986,11 +1986,81 @@ fieldset {
   border-radius: 3px;
 }
 
+/*  модальное окно для карты  */
+
 .map-popup {
+  display: none;
   top: 20px;
   left: 22px;
 }
 
 .map-popup .close-popup {
   background-color: transparent;
+}
+
+/*  модальное окно для карзины  */
+
+.modal-cart {
+  top: 50px;
+  left: 190px;
+  width: 620px;
+  min-height: 282px;
+  border-top: 7px solid #ee3643;
+}
+
+.modal-cart-top {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  line-height: 18px;
+  width: auto;
+  min-height: 170px;
+}
+
+.cart-title {
+  padding-left: 25px;
+}
+
+.cart-title::before {
+  content: "";
+  position: absolute;
+  top: 48px;
+  left: 80px;
+  width: 75px;
+  height: 75px;
+  background: url("../img/decor/form-on.svg") no-repeat 0 0;
+}
+
+.modal-cart-bottom {
+  display: flex;
+  width: auto;
+  min-height: 114px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+.modal-cart-order,
+.modal-cart-continue {
+  width: 220px;
+  min-height: 39px;
+  margin-right: 20px;
+  padding-top: 10px;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ee3643;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+}
+
+.modal-cart-continue {
+  padding: 0;
+  color: #000000;
+  background-color: #ffffff;
 }
