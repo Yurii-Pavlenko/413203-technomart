@@ -1531,10 +1531,9 @@ fieldset {
 /* стилизация блока Сервисы, блоков О Компании и Контакты */
 
 .services {
-  min-height: 520px;
   padding-top: 67px;
   background-color: #f4f8f9;
-  margin-bottom: 83px;
+  margin-bottom: 75px;
 }
 
 .services-wrapper {
@@ -1556,7 +1555,7 @@ fieldset {
 .about-text {
   width: 400px;
   margin-top: 23px;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 .contacts {
@@ -1594,7 +1593,7 @@ fieldset {
 }
 
 .services-header .services-text {
-  margin-bottom: 70px;
+  margin-bottom: 72px;
 }
 
 .services-slider {
@@ -1610,8 +1609,8 @@ fieldset {
 }
 
 .delivery-slide img {
-  margin-top: -183px;
-  margin-left: 150px;
+  margin-top: -130px;
+  margin-left: 152px;
 }
 
 .guaranty-slide img {
@@ -1625,7 +1624,7 @@ fieldset {
 }
 
 .serve-slide-title {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 36px;
   line-height: 24px;
@@ -1634,7 +1633,6 @@ fieldset {
 }
 
 .services-text {
-  padding-top: 2px;
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -1646,7 +1644,7 @@ fieldset {
 
 .services-label {
   width: 240px;
-  min-height: 61px;
+  min-height: 59px;
   padding-top: 10px;
   padding-left: 24px;
   font-weight: 700;
@@ -1691,8 +1689,8 @@ fieldset {
   content: "";
   position: absolute;
   top: 8px;
-  left: -5px;
-  width: 30px;
+  left: 0;
+  width: 25px;
   height: 2px;
   background-color: #ee3643;
 }
@@ -1706,7 +1704,7 @@ fieldset {
 }
 
 .transport-item {
-  padding-left: 32px;
+  padding-left: 36px;
   font-size: 18px;
   line-height: 20px;
   margin-bottom: 20px;
