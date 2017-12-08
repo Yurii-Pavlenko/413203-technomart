@@ -915,19 +915,12 @@ fieldset {
   padding: 0;
 }
 
-.promo-goods {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-  color: #ffffff;
-}
-
 .promo-item a {
   display: inline-block;
   width: 135px;
   height: auto;
   text-align: center;
-  padding: 13px 0;
+  padding: 10px 0;
   margin: 63px 0 0 25px;
   font-size: 14px;
   line-height: 18px;
@@ -957,14 +950,17 @@ fieldset {
   flex-direction: column;
 }
 
-.promo-item h3 {
+.promo-item-title {
   position: absolute;
-  top: 22px;
+  top: 20px;
   left: 22px;
   width: 150px;
   height: 30px;
-  margin: 24px 22px;
-  font-weight: 400;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+
 }
 
 .promo-wrapper {
@@ -979,15 +975,15 @@ fieldset {
 .promo-item-title::after {
   content: "";
   position: absolute;
-  top: 1px;
-  right: -80px;
+  top: 11px;
+  right: -86px;
   width: 44px;
   height: 65px;
   background: url("../img/decor/icon-materials.svg") no-repeat 0 0;
 }
 
 .instruments-title::after {
-  right: -110px;
+  right: -100px;
   width: 75px;
   height: 61px;
   background: url("../img/decor/icon-instruments.svg") no-repeat 0 0;
@@ -1001,7 +997,8 @@ fieldset {
 }
 
 .discounts-title::after {
-  right: -90px;
+  top: 6px;
+  right: -85px;
   width: 59px;
   height: 72px;
   background: url("../img/decor/icon-discounts.svg") no-repeat 0 0;
@@ -1068,8 +1065,8 @@ fieldset {
 .slider-switcher::before {
   content: "";
   position: absolute;
-  top: -135px;
-  left: 20px;
+  top: -140px;
+  left: 25px;
   width: 22px;
   height: 40px;
   background: url("../img/decor/icon-left.png") no-repeat 0 0;
@@ -1078,7 +1075,7 @@ fieldset {
 .slider-switcher::after {
   content: "";
   position: absolute;
-  top: -135px;
+  top: -140px;
   left: 580px;
   width: 22px;
   height: 40px;
@@ -1098,9 +1095,13 @@ fieldset {
   font-size: 36px;
   line-height: 30px;
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 .slide-text {
+  margin: 0;
+  margin-top: 4px;
+  font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
@@ -1113,7 +1114,7 @@ fieldset {
 
 .button-slider {
   position: absolute;
-  top: 106px;
+  top: 112px;
   left: 0 ;
   display: inline-block;
   width: 195px;
@@ -1123,7 +1124,7 @@ fieldset {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 12px;
   color: #ffffff;
   margin: 92px 0 0 25px;
   background-color: #ee3643;
@@ -1183,12 +1184,6 @@ fieldset {
 
 /* стилизация блоков популярных товаров и популярных производителей */
 
-.popular h2,
-.popular h3 {
-  margin: 0;
-  padding: 0;
-}
-
 .title {
   font-weight: 400;
   font-size: 30px;
@@ -1197,15 +1192,19 @@ fieldset {
   text-transform: uppercase;
 }
 
+.manufacturers-header .title {
+  margin-left: -3px;
+}
+
 .block-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 24px 0 30px;
+  padding: 0 23px 0 30px;
   width: 940px;
   min-height: 89px;
   background-color: #f9f5f0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .button-red {
@@ -1306,6 +1305,7 @@ fieldset {
   width: 180px;
   height: 160px;
   margin: 0 auto;
+  margin-bottom: 18px;
 }
 
 .goods-item:hover .buttons {
@@ -1380,8 +1380,8 @@ fieldset {
 .name-item {
   min-height:40px;
   padding:0 25px;
-  margin-top:10px;
-  margin-bottom:15px;
+  margin-top: 10px;
+  margin-bottom: -5px;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
@@ -1390,6 +1390,7 @@ fieldset {
 .goods-item p {
   font-size: 17px;
   line-height: 18px;
+  text-transform: uppercase;
 }
 
 .old-price {
@@ -1409,7 +1410,7 @@ fieldset {
   width:140px;
   margin:10px auto;
   margin-bottom:20px;
-  padding:10px 30px;
+  padding:10px 0;
   border-radius:3px;
   color: #ffffff;
   background-color: #ee3643;
@@ -1453,7 +1454,12 @@ fieldset {
 }
 
 .manufacturers {
+  margin-top: -42px;
   margin-bottom: 67px;
+}
+
+.first-row {
+  margin-top: 10px;
 }
 
 .sort-footer {
@@ -1525,6 +1531,7 @@ fieldset {
 /* стилизация блока Сервисы, блоков О Компании и Контакты */
 
 .services {
+  min-height: 520px;
   padding-top: 67px;
   background-color: #f4f8f9;
   margin-bottom: 83px;
@@ -1592,7 +1599,6 @@ fieldset {
 
 .services-slider {
   position: relative;
-  padding-top: 5px;
 }
 
 .guaranty-slide {
@@ -1628,6 +1634,7 @@ fieldset {
 }
 
 .services-text {
+  padding-top: 2px;
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -1640,6 +1647,8 @@ fieldset {
 .services-label {
   width: 240px;
   min-height: 61px;
+  padding-top: 10px;
+  padding-left: 24px;
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
