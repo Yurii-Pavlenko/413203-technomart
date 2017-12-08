@@ -80,6 +80,7 @@ input[type="radio"].visually-hidden {
 }
 
 .store-nav-wrapper {
+  width: 490px;
   display: flex;
   justify-content: space-between;
 }
@@ -116,7 +117,7 @@ input[type="radio"].visually-hidden {
 
 .search-header {
   display: flex;
-  width: 224px;
+  width: 250px;
 }
 
 .search {
@@ -163,11 +164,15 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
+.store-nav-link {
+  width: 150px;
+}
+
 .store-nav-icon {
   display: block;
   position: relative;
   padding-top: 12px;
-  padding-left: 36px;
+  padding-left: 45px;
   color: #ffffff;
   text-transform: none;
 }
@@ -180,7 +185,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 12px;
-  left: 10px;
+  left: 17px;
   background-image: url("../img/decor/icon-bookmark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -344,32 +349,29 @@ input[type="radio"].visually-hidden {
 }
 
 .user-container-li {
-  min-height: 45px;
-  margin-left: 10px;
-  padding: 20px 0;
+  position: relative;
   text-align: center;
+  background-color: #ffffff;
+}
+
+.user-container-name {
+  width: 240px;
 }
 
 .user-name {
   display: inline-block;
-  position: relative;
-  margin: 0;
-  padding-top: 12px;
-  padding-left: 10px;
-  width: 255px;
-  min-height: 45px;
-  margin-top: -30px;
-  margin-right: -100px;
+  padding-top: 14px;
+  padding-left: 40px;
   font-size: 21px;
   line-height: 18px;
   text-transform: none;
-  background: url("../img/decor/icon-user.svg") no-repeat 17px 10px;
+  background: url("../img/decor/icon-user.svg") no-repeat 7px 13px;
   background-color: #ffffff;
 }
 
 .user-name:hover,
 .user-name:focus {
-  background: url("../img/decor/icon-user-focus.svg") no-repeat 17px 10px;
+  background: url("../img/decor/icon-user-focus.svg") no-repeat 7px 13px;
   background-color: #ffffff;
 }
 
@@ -379,11 +381,16 @@ input[type="radio"].visually-hidden {
   opacity: 0.5;
 }
 
+.user-container-logout {
+  width: 60px;
+}
+
 .user-logout {
   display: block;
   width: 30px;
   min-height: 45px;
-  padding-top: 13px;
+  padding-top: 16px;
+  padding-left: 30px;
   background-color: #ffffff;
 }
 
@@ -396,16 +403,29 @@ input[type="radio"].visually-hidden {
 .user-nav {
   width: 300px;
   min-height: 30px;
-  margin: -18px 0 0 30px;
-  padding-left: 40px;
+  padding-top: 6px;
+  padding-left: 60px;
 }
 
 .user-nav a {
+  margin-right: 27px;
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
   text-transform: none;
   text-decoration: underline;
+}
+
+.user-nav a:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 61px;
+  right: 197px;
+
+  width: 4px;
+  height: 4px;
+  background-color: #32425c;
+  border-radius: 50%;
 }
 
 .user-nav a:hover,
