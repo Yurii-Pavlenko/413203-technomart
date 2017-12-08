@@ -1716,17 +1716,20 @@ fieldset {
 
 .btn-transport {
   width: 220px;
+  padding-top: 12px;
 }
 
 .contacts-feedback {
   width: 300px;
+  padding-top: 12px;
+  padding-left: 5px;
 }
 
 /* Стилизация футера */
 
 .main-footer p {
   margin: 0;
-  padding: 0;
+  padding-left: 3px;
 }
 
 .main-footer ul {
@@ -1743,6 +1746,7 @@ fieldset {
 }
 
 .footer-navigation {
+  min-height: 193px;
   background-color: #32425c;
 }
 
@@ -1758,6 +1762,7 @@ fieldset {
 .footer-header {
   display: flex;
   flex-direction: column;
+  margin-right: -38px;
 }
 
 .footer-nav-list {
@@ -1770,14 +1775,26 @@ fieldset {
 
 .footer-subnav-list {
   width: 518px;
-  margin-left: 25px;
+  margin-left: 23px;
   display: flex;
-  justify-content: space-between;
 }
 
 .footer-nav-list a {
+  margin-right: 57px;
   color: #f1f5f7;
   text-transform: none;
+}
+
+.footer-nav-list .news-link {
+  margin-right: 59px;
+}
+
+.footer-nav-list .catalog-link {
+  margin-right: 61px;
+}
+
+.footer-nav-list .delivery-link {
+  margin-right: 60px;
 }
 
 .footer-nav-list a:hover,
@@ -1792,6 +1809,7 @@ fieldset {
 }
 
 .footer-subnav-list a {
+  margin-right: 59px;
   color: #ffd180;
   text-transform: none;
 }
