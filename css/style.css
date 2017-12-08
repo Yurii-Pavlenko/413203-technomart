@@ -1728,8 +1728,13 @@ fieldset {
 /* Стилизация футера */
 
 .main-footer p {
-  margin: 0;
-  padding-left: 3px;
+  margin-top: 0;
+  padding-left: 2px;
+}
+
+.footer .copyright {
+  width: 126px;
+  min-height: 85px;
 }
 
 .main-footer ul {
@@ -1825,8 +1830,8 @@ fieldset {
 .footer-contacts-container {
   display: flex;
   padding-top: 37px;
-  font-size: 18px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 18px;
   color: #ffffff;
   background-color: #293449;
 }
@@ -1850,11 +1855,16 @@ fieldset {
   color: #ee3643;
 }
 
+.footer-social {
+  margin-right: 125px;
+  padding-top: 3px;
+}
+
 .footer-social a {
   display: inline-block;
   width: 40px;
   height: 40px;
-  margin: -20px 5px 0 80px;
+  margin: -20px 0 0 126px;
   text-align: center;
   vertical-align: middle;
   color: #ffffff;
@@ -1872,7 +1882,7 @@ fieldset {
 
 .footer-social .insta {
   margin-left: 5px;
-  background: url("../img/decor/insta-icon.png") no-repeat 13px 8px;
+  background: url("../img/decor/insta-icon.png") no-repeat 9px 8px;
   background-color: #212a3a;
   border-radius: 50%;
 }
@@ -1886,7 +1896,7 @@ fieldset {
 }
 
 .footer-social-list {
-  width: 270px;
+  width: 150px;
   min-height: 50px;
   display: flex;
   margin-right: 90px;
@@ -1896,6 +1906,11 @@ fieldset {
   width: 305px;
   display: flex;
   justify-content: space-between;
+  padding-left: 48px;
+}
+
+.footer-contacts-text {
+  margin-right: 50px;
 }
 
 /*  стилизация модальных окон  */
