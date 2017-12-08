@@ -59,6 +59,10 @@ input[type="radio"].visually-hidden {
   margin-bottom: 60px;
 }
 
+.catalog-header {
+  margin-bottom: 18px;
+}
+
 .main-header ul,
 .catalog-header ul {
   list-style: none;
@@ -510,7 +514,7 @@ input[type="radio"].visually-hidden {
 .breadcrumbs-link {
   display: inline-block;
   position: relative;
-  padding-left: 25px;
+  padding-left: 26px;
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -521,14 +525,32 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  left: 3px;
   width: 20px;
   height: 15px;
-  background: url("../img/decor/icon-right-small.png") no-repeat 0 3px;
+  background: url("../img/decor/icon-right-small.png") no-repeat 0 1px;
 }
 
 .first::before {
-  background: url("../img/decor/icon-home.svg") no-repeat 0 1px;
+  background: url("../img/decor/icon-home.svg") no-repeat -3px 1px;
+}
+
+.first::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 57px;
+  width: 20px;
+  height: 15px;
+  background: url("../img/decor/icon-right-small.png") no-repeat 0 2px;
+}
+
+.breadcrumbs .first {
+  padding-left: 55px;
+}
+
+.breadcrumbs .current {
+  padding-left: 28px;
 }
 
 .catalog-title {
