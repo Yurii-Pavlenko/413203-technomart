@@ -527,7 +527,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   position: relative;
   padding-left: 26px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
@@ -588,7 +588,7 @@ input[type="radio"].visually-hidden {
 /* стилизация блоков фильтр и сортировка в каталоге */
 
 .catalog-part {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -893,7 +893,7 @@ fieldset {
   padding-left: 10px;
   border: 1px solid #c5c5c5;
   background-color: #ffffff;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1151,7 +1151,7 @@ fieldset {
 .slide-text {
   margin: 0;
   margin-top: 4px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
@@ -1169,7 +1169,7 @@ fieldset {
   display: inline-block;
   width: 195px;
   height: 39px;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -1431,7 +1431,7 @@ fieldset {
 
 .goods-item h3,
 .goods-item p {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-weight: 700;
 }
 
@@ -1532,7 +1532,7 @@ fieldset {
   margin-right: 10px;
   text-align: center;
   padding-top: 7px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
@@ -1569,7 +1569,7 @@ fieldset {
 .tale-header h2 {
   margin: 0;
   padding: 0;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 24px;
@@ -1581,7 +1581,7 @@ fieldset {
   margin: 0;
   padding: 0;
   width: 940px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -1692,7 +1692,7 @@ fieldset {
 }
 
 .services-text {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -2064,7 +2064,7 @@ fieldset {
 
 .modal-feedback input,
 .modal-feedback textarea {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 18px;
   border: 2px solid #dee3e4;
@@ -2100,7 +2100,7 @@ fieldset {
 .bnt-feedback {
   width: 460px;
   min-height: 39px;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -2171,7 +2171,7 @@ fieldset {
   min-height: 39px;
   margin-right: 20px;
   padding-top: 10px;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
