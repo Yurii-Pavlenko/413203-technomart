@@ -98,7 +98,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   width: 220px;
   height: 30px;
-  margin-right: 18px;
+
   text-align: center;
   font-size: 24px;
   line-height: 24px;
@@ -121,15 +121,18 @@ input[type="radio"].visually-hidden {
 
 .search-header {
   display: flex;
-  width: 250px;
+  position: relative;
+  background-color: transparent;
 }
 
-.search {
+.search-header .search {
+  width: 180px;
   padding: 0 10px;
   background-color: #293449;
   border: none;
 }
 
+.search-header .search:focus,
 .search-header:focus .search {
   height: auto;
   color: #000000;
@@ -138,27 +141,37 @@ input[type="radio"].visually-hidden {
 
 .search-label {
   display: block;
-  padding: 12px 0 0 30px;
+  margin-left: -15px;
+  padding-top: 12px;
+  padding-left: 35px;
   position: relative;
+  z-index: 1;
 }
 
 .search-label::before {
   content: "";
   position: absolute;
   top: 0;
-  left: -3px;
+  left: 0;
   background-image: url("../img/decor/icon-search.svg");
   background-repeat: no-repeat;
-  background-position: 0 12px;
+  background-position: 5px 12px;
   width: 25px;
   height: 42px;
+  z-index: 10;
 }
 
 .search-label:hover::before {
   background-image: url("../img/decor/icon-search-hover.svg");
 }
 
+.search:focus ~ .search-label,
 .search-header:focus .search-label {
+  color: #ffffff;
+  background-color: #ffffff;
+}
+
+.search-label:focus {
   color: #ffffff;
   background-color: #ffffff;
 }
@@ -182,7 +195,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-cart {
-  padding-left: 44px;
+  padding-left: 50px;
 }
 
 .store-nav-icon::before {
@@ -198,7 +211,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-cart::before {
-  left: 13px;
+
 }
 
 .store-nav-icon:hover::before,
@@ -1200,8 +1213,16 @@ fieldset {
 }
 
 .switch-slider {
+  position: absolute;
+  top:14px;
+  left: 7px;
   width: 10px;
   height: 10px;
+  background: url("../img/decor/slider dots.png") no-repeat 0 0;
+}
+
+.promo-slider-radiobox .right {
+  left: 27px;
 }
 
 .switch-slider:nth-child(2) {
@@ -1213,10 +1234,10 @@ fieldset {
    content: "";
    position: absolute;
    padding-left: 10px;
-   top: 12px;
-   left: 0;
-   width: 10px;
-   height: 10px;
+   top: 2px;
+   left: 2px;
+   width: 7px;
+   height: 7px;
    background: url("../img/decor/slider indicator.png") no-repeat 0 0;
  }
 
@@ -1520,7 +1541,7 @@ fieldset {
   border-radius: 3px;
 }
 
-.next {
+.page-link .next {
   width: 140px;
   padding-left: 30px;
   padding-right: 30px;
