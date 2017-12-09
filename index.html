@@ -14,7 +14,7 @@
       <div class="container store-nav-container">
         <h2 class="visually-hidden">В помощь заказчику</h2>
         <div class="store-nav-wrapper">
-          <a class="logo header-logo" href="index.html">Техномарт</a>
+          <a class="logo header-logo">Техномарт</a>
           <form class="search-header" action="https://echo.htmlacademy.ru" tabindex="0" method="post">
             <label class="search-label" for="search">Поиск:</label>
             <input class="search" type="search" name="search" id="search">
@@ -461,7 +461,7 @@
       </div>
     </section>
   </footer>
-  <div class="modal-container">
+  <div class="container modal-container">
     <div class="modal map-popup">
       <button class="close-popup" type="button" aria-label="Закрыть карту"></button>
       <img src="img/content/map-popup.png" width="970" height="446" alt="Карта">
@@ -491,7 +491,17 @@
         <button class="btn bnt-feedback" type="submit" form="feedback-form">Отправить</button>
       </div>
     </form>
+    <div class="modal modal-cart">
+      <div class="modal-cart-top">
+        <button class="close-popup" type="button" aria-label="Закрыть сообщение"></button>
+        <p class="cart-title">Товар добавлен в корзину!</p>
+      </div>
+      <div class="modal-cart-bottom">
+        <a class="btn modal-cart-order" href="#">Оформить заказ</a>
+        <button class="btn modal-cart-continue" type="button">Продолжить покупки</button>
+      </div>
+    </div>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script.mini.js"></script>
   </body>
 </html>

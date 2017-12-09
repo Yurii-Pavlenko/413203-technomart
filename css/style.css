@@ -98,7 +98,6 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   width: 220px;
   height: 30px;
-
   text-align: center;
   font-size: 24px;
   line-height: 24px;
@@ -107,16 +106,16 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 5px #b52933;
 }
 
-.header-logo:hover,
-.header-logo:focus {
+.catalog-header .header-logo:hover,
+.catalog-header .header-logo:focus {
   background-color: #ca2c37;
   border-color: #bf2d38;
 }
 
-.header-logo:active {
+.catalog-header .header-logo:active {
   background-color: #ba2732;
   border: 1px solid #b72732;
-  border-bottom: 5px solid #8e1e26;
+  box-shadow: 0 5px #8e1e26;
 }
 
 .search-header {
@@ -1541,7 +1540,7 @@ fieldset {
   border-radius: 3px;
 }
 
-.page-link .next {
+.next {
   width: 140px;
   padding-left: 30px;
   padding-right: 30px;
@@ -1808,6 +1807,18 @@ fieldset {
   margin-bottom: 32px;
   font-size: 30px;
   line-height: 30px;
+}
+
+.catalog-header .footer-logo:hover,
+.catalog-header .footer-logo:focus {
+  background-color: #ca2c37;
+  border-color: #bf2d38;
+}
+
+.catalog-header .footer-logo:active {
+  background-color: #ba2732;
+  border: 1px solid #b72732;
+  box-shadow: 0 5px #8e1e26;
 }
 
 .footer-navigation {
@@ -2114,7 +2125,7 @@ fieldset {
 
 .modal-cart {
   top: 50px;
-  left: 190px;
+  left: 290px;
   width: 620px;
   min-height: 282px;
   border-top: 7px solid #ee3643;
