@@ -1258,7 +1258,7 @@ fieldset {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 23px 0 30px;
+  padding: 0 23px 0 28px;
   width: 940px;
   min-height: 89px;
   background-color: #f9f5f0;
@@ -1307,6 +1307,7 @@ fieldset {
   width: 750px;
   display: flex;
   flex-wrap: wrap;
+  text-transform: none;
 }
 
 .goods-list img {
@@ -1435,6 +1436,36 @@ fieldset {
   font-weight: 700;
 }
 
+.goods-item-span {
+  text-transform: uppercase;
+}
+
+.goods-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 184px;
+  height: 165px;
+  padding-right: 20px;
+}
+
+.bosch-9000 {
+  padding: 6px 3px 0 0;
+}
+
+.bosch-6000 {
+  padding-right: 24px;
+}
+
+.bosch-2000 {
+  padding-right: 32px;
+}
+/*
+.goods-img-container img {
+  width: inherit;
+}
+*/
+
 .name-item {
   min-height:40px;
   padding:0 25px;
@@ -1466,8 +1497,7 @@ fieldset {
 .new-price {
   position:relative;
   width:140px;
-  margin:10px auto;
-  margin-bottom:20px;
+  margin: 9px 0 30px 41px;
   padding:10px 0;
   border-radius:3px;
   color: #ffffff;
