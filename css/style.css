@@ -311,7 +311,7 @@ input[type="radio"].visually-hidden {
 
 .header-address {
   position: absolute;
-  top: 35px;
+  top: 37px;
   left: 340px;
   width: 260px;
   font-size: 14px;
@@ -674,16 +674,16 @@ fieldset {
 
 
 .range-toggle-max {
-   position: absolute;
-   top: 30px;
-   right: 40px;
-   width: 20px;
-   height: 20px;
-   background-color: #ffffff;
-   border: 0;
-   border-radius: 50%;
-   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-   cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 37px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
  }
 
 .range-toggle-max::before {
@@ -701,7 +701,7 @@ fieldset {
   position: absolute;
   display: block;
   top: 30px;
-  left: 20px;
+  left: 23px;
   width: 20px;
   height: 20px;
   font-size:20px;
@@ -1288,6 +1288,10 @@ fieldset {
 
 .goods-list-container {
   margin-left: -10px;
+  margin-bottom: 52px;
+}
+
+.sort .goods-list-container {
   margin-bottom: 42px;
 }
 
@@ -1497,7 +1501,7 @@ fieldset {
 .new-price {
   position:relative;
   width:140px;
-  margin: 9px 0 30px 41px;
+  margin: 9px 0 20px 41px;
   padding:10px 0;
   border-radius:3px;
   color: #ffffff;
@@ -1513,10 +1517,6 @@ fieldset {
   height:0;
   border:19px solid white;
   border-left-color:#ee3643;
-}
-
-.goods {
-  margin-bottom: 20px;
 }
 
 .manufacturers-list {
