@@ -380,6 +380,7 @@ input[type="radio"].visually-hidden {
   padding-left: 40px;
   font-size: 21px;
   line-height: 18px;
+  vertical-align: top;
   text-transform: none;
   background: url("../img/decor/icon-user.svg") no-repeat 7px 13px;
   background-color: #ffffff;
@@ -527,6 +528,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   position: relative;
   padding-left: 26px;
+  vertical-align: top;
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -970,6 +972,7 @@ fieldset {
   width: 135px;
   height: auto;
   text-align: center;
+  vertical-align: top;
   padding: 10px 0;
   margin: 63px 0 0 25px;
   font-size: 14px;
@@ -1174,6 +1177,7 @@ fieldset {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+  vertical-align: top;
   padding-top: 12px;
   color: #ffffff;
   margin: 92px 0 0 25px;
@@ -1332,6 +1336,7 @@ fieldset {
   margin: 10px;
   border: 1px solid #eaeaea;
   text-align: center;
+  vertical-align: top;
   transition: transform 0.4s ease-out;
 }
 
@@ -1373,6 +1378,7 @@ fieldset {
 
 .goods-item:hover .buttons {
   display: inline-block;
+  vertical-align: top;
 }
 
 .goods-item:hover img {
@@ -1388,6 +1394,7 @@ fieldset {
   width: 135px;
   height: 35px;
   text-align: center;
+  vertical-align: top;
   border-radius: 2px;
 }
 
@@ -1554,17 +1561,12 @@ fieldset {
   display: flex;
 }
 
-.sort-footer a {
-  margin: 0;
-  padding: 0;
+.sort-footer .page-link {
   min-width: 37px;
   min-height: 37px;
-  margin-right: 10px;
-  text-align: center;
-  padding-top: 7px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+  margin-right: 12px;
+  padding-top: 9px;
+  padding-left: 14px;
   color: #000000;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
@@ -1572,8 +1574,11 @@ fieldset {
 
 .next {
   width: 140px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-top: 9px;
+  padding-left: 29px;
+  color: #000000;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
 }
 
 .sort-footer a:hover,
@@ -1967,7 +1972,7 @@ fieldset {
   height: 40px;
   margin: -20px 0 0 126px;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: top;
   color: #ffffff;
   background: url("../img/decor/vk-icon.png") no-repeat 6px 11px;
   background-color: #212a3a;
@@ -2108,6 +2113,7 @@ fieldset {
 
 .feedback-letter {
   display: inline-block;
+  vertical-align: top;
   margin-bottom: 10px;
 }
 
