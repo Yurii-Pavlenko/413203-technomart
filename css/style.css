@@ -1983,6 +1983,10 @@ fieldset {
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
+.modal-show {
+  display: block;
+}
+
 .feedback-form-container {
   width: 620px;
   padding: 50px 70px 0 70px;
@@ -1991,7 +1995,7 @@ fieldset {
 
 .modal-feedback {
   top: 20px;
-  left: 200px;
+  left: 330px;
   min-height: 430px;
   border-top: 7px solid #ee3643;
 }
