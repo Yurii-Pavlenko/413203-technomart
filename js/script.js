@@ -1,5 +1,3 @@
-var bookmark = document.querySelectorAll('.bookmark');
-var headerBookmark = document.querySelector('.header-bookmark');
 var writeUs = document.querySelector('.contacts-feedback');
 var map = document.querySelector('.contacts-map');
 var modalContainer = document.querySelector('.modal-container');
