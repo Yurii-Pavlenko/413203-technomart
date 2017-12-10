@@ -910,12 +910,6 @@ fieldset {
   margin-bottom: 49px;
 }
 
-.filter-power-list {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
 .btn-filter {
   width: 140px;
   min-height: 39px;
@@ -1100,7 +1094,6 @@ fieldset {
   height: 60px;
   text-indent: -1000px;
   overflow: hidden;
-  z-index: 20;
 }
 
 .flag-new {
@@ -1239,38 +1232,32 @@ fieldset {
 }
 
 .promo-slider-radiobox {
-  position: relative;
   display: flex;
 }
 
-.switch-slider {
-  position: absolute;
-  top:14px;
-  left: 7px;
-  width: 10px;
-  height: 10px;
+.promo-slider-radiobox label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  width: 20px;
+  height: 20px;
   background: url("../img/decor/slider dots.png") no-repeat 0 0;
 }
 
-.promo-slider-radiobox .right {
-  left: 27px;
+.promo-slider-radiobox .left {
+  background: url("../img/decor/slider-dot-on.png") no-repeat 0 0;
 }
 
-.switch-slider:nth-child(2) {
-  margin-right: 10px;
+.promo-slider-radio:checked + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: url("../img/decor/slider-dot-on.png") no-repeat 0 0;
 }
-
-
-.promo-slider-radio:checked + .switch-slider::before {
-   content: "";
-   position: absolute;
-   padding-left: 10px;
-   top: 2px;
-   left: 2px;
-   width: 7px;
-   height: 7px;
-   background: url("../img/decor/slider indicator.png") no-repeat 0 0;
- }
 
 /* стилизация блоков популярных товаров и популярных производителей */
 
@@ -1378,6 +1365,10 @@ fieldset {
   padding: 0;
   color: #cacaca;
   border-bottom: 1px dotted #ee3643;
+}
+
+.sort-item .sort-down-triangle {
+  border: none;
 }
 
 .sort-item a:hover,
@@ -2071,6 +2062,7 @@ fieldset {
   color: #000000;
   background-color: #ffffff;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  z-index: 25;
 }
 
 .modal-show {
@@ -2084,8 +2076,9 @@ fieldset {
 }
 
 .modal-feedback {
-  top: 20px;
-  left: 330px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   min-height: 430px;
   border-top: 7px solid #ee3643;
 }
@@ -2193,8 +2186,9 @@ fieldset {
 /*  модальное окно для карты  */
 
 .map-popup {
-  top: 20px;
-  left: 22px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .map-popup .close-popup {
@@ -2204,8 +2198,9 @@ fieldset {
 /*  модальное окно для карзины  */
 
 .modal-cart {
-  top: 50px;
-  left: 290px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 620px;
   min-height: 282px;
   border-top: 7px solid #ee3643;
