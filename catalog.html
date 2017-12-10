@@ -6,7 +6,7 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.mini.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="header-up catalog-header">
@@ -35,7 +35,7 @@
     <div class="user-container">
       <ul class="user-navigation">
         <li class="user-container-li user-container-name">
-          <a class="user-name">Равшан Джамшутович</a>
+          <a class="user-name" href="#">Равшан Джамшутович</a>
         </li>
         <li class="user-container-li user-container-logout">
           <a class="user-logout" href="index.html">
@@ -81,6 +81,9 @@
   <div class="container">
     <header class="catalog-header">
       <ul class="breadcrumbs">
+        <li class="breadcrumbs-item home-li">
+          <a class="breadcrumbs-link home-link" href="index.html"></a>
+        </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link first" href="#">Каталог</a>
         </li>
@@ -185,12 +188,12 @@
               </li>
               <li class="sort-item">
                 <a class="sort-up-triangle active" href="#" aria-label="Сортировка по возрастанию">
-                    <img src="img/decor/icon-up-dir.svg" width="11" height="10" alt="icon-up-dir">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#ee3643" d="M5.5 0L0 10h11z"/></svg>
                 </a>
               </li>
               <li class="sort-item">
                 <a class="sort-down-triangle" href="#" aria-label="Сортировка по убыванию">
-                  <img src="img/decor/icon-down-triangle.svg" width="11" height="10" alt="icon-down-triangle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
                 </a>
               </li>
             </ul>
@@ -363,8 +366,11 @@
     </header>
     <div class="container">
       <p>
-        Перфоратор - универсальный строительный инструмент. Предназначен для сверления отверстий в
-        кирпиче, бетоне и камне.<br> Существуют электромеханические и пневматические перфораторы. Современные
+        Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+        кирпиче, бетоне и камне.
+      </p>
+      <p>
+        Существуют электромеханические и пневматические перфораторы. Современные
         модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В<br> ассортиментном ряду есть выбор
         "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
       </p>
@@ -437,11 +443,11 @@
       </div>
       <div class="footer-container">
         <p class="footer-contacts-text">
-          Обратная связь:<br>
+          Обратная связь:
           <a class="footer-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
         <p class="footer-contacts-developer">
-          Разработано —<br>
+          Разработано —
           <a class="footer-contacts-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </div>
@@ -457,7 +463,7 @@
     </div>
     <div class="modal-cart-bottom">
       <a class="btn modal-cart-order" href="#">Оформить заказ</a>
-      <button class="btn modal-cart-continue" type="button">Продолжить покупки</button>
+      <a class="btn modal-cart-continue" href="#">Продолжить покупки</a>
     </div>
   </div>
 </div>
