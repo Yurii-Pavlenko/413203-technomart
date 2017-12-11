@@ -5,7 +5,7 @@ body {
 }
 
 body {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
   line-height: 24px;
   font-weight: 400;
@@ -265,6 +265,7 @@ input[type="radio"].visually-hidden {
 }
 
 .store-info {
+  min-height: 113px;
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -273,8 +274,6 @@ input[type="radio"].visually-hidden {
 .header-text {
   width: 300px;
   margin: 0;
-  margin-right: 35px;
-  margin-bottom: 40px;
   padding: 5px 25px 0 53px;
   font-style: italic;
   font-size: 16px;
@@ -283,15 +282,14 @@ input[type="radio"].visually-hidden {
 }
 
 .header-phone {
-  position: absolute;
-  top: -20px;
-  left: 332px;
-  display: block;
+  position: relative;
+  left: 5px;
   width: 270px;
   min-height: 45px;
+  margin: 0;
   align-self: center;
-  padding-left: 70px;
-  padding-top: 10px;
+  padding-left: 73px;
+  padding-top: 12px;
   font-size: 21px;
   line-height: 18px;
   color: #ee3643;
@@ -301,7 +299,7 @@ input[type="radio"].visually-hidden {
 .header-phone::before {
   content: "";
   position: absolute;
-  left: 12px;
+  left: 15px;
   width: 25px;
   height: 25px;
   background-image: url("../img/decor/icon-phone.svg");
@@ -310,10 +308,11 @@ input[type="radio"].visually-hidden {
 }
 
 .header-address {
-  position: absolute;
-  top: 37px;
-  left: 340px;
-  width: 260px;
+  width: 275px;
+  margin: 0;
+  padding-top: 6px;
+  padding-left: 10px;
+  text-align: center;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
@@ -421,8 +420,8 @@ input[type="radio"].visually-hidden {
 .user-nav {
   width: 300px;
   min-height: 30px;
-  padding-top: 6px;
-  padding-left: 60px;
+  padding-top: 5px;
+  padding-left: 58px;
 }
 
 .user-nav a {
@@ -438,8 +437,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 61px;
-  right: 197px;
-
+  right: 198px;
   width: 4px;
   height: 4px;
   background-color: #32425c;
@@ -533,7 +531,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   position: relative;
   vertical-align: top;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
@@ -618,7 +616,7 @@ input[type="radio"].visually-hidden {
 /* стилизация блоков фильтр и сортировка в каталоге */
 
 .catalog-part {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -654,7 +652,6 @@ fieldset {
 }
 
 .filter-price {
-  display: flex;
   margin: -19px 0 -12px -12px;
 }
 
@@ -662,9 +659,9 @@ fieldset {
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
-  padding-top: 16px;
+  padding-top: 19px;
   padding-left: 2px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .filter-price-range {
@@ -672,7 +669,8 @@ fieldset {
   position: relative;
   width: 220px;
   min-height: 80px;
-  margin-bottom: 8px;
+  margin-left: 3px;
+  margin-bottom: 7px;
   border-radius: 0 0 3px 3px;
   background-color: #f7f3ec;
 }
@@ -683,30 +681,26 @@ fieldset {
 
 .range-controls .scale {
   position: absolute;
-  top: 39px;
+  top: 37px;
   left: 181px;
-
   width: 20px;
   height: 2px;
-
   background-color: #d7dcde;
 }
 
 .range-controls .bar {
   position: absolute;
-  top: 0;
-  right: 40px;
-  width: 120px;
+  top: -2px;
+  right: 35px;
+  width: 125px;
   height: 2px;
   background-color: #00ca74;
 }
 
-
-
 .range-toggle-max {
   position: absolute;
-  top: 30px;
-  right: 37px;
+  top: 28px;
+  right: 40px;
   width: 20px;
   height: 20px;
   background-color: #ffffff;
@@ -730,8 +724,8 @@ fieldset {
 .range-toggle-min {
   position: absolute;
   display: block;
-  top: 30px;
-  left: 23px;
+  top: 28px;
+  left: 20px;
   width: 20px;
   height: 20px;
   font-size:20px;
@@ -821,11 +815,10 @@ fieldset {
 }
 
 .catalog-part-caption {
-  width: auto;
   min-height: 39px;
   margin-top: 0;
   padding-left: 19px;
-  padding-top: 12px;
+  padding-top: 11px;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -842,6 +835,7 @@ fieldset {
   display: flex;
   font-size: 17px;
   line-height: 18px;
+  padding-left: 2px;
   border-bottom: 1px solid #c5c5c5;
 }
 
@@ -852,22 +846,25 @@ fieldset {
   text-align: center;
 }
 
+.filter-price-diapason input:first-child {
+  margin-right: 30px;
+}
+
 .filter-price-dash {
-  display: block;
-  position: relative;
-  width: 30px;
-  padding-top: 10px;
+ position: relative;
 }
 
 .filter-price-dash::after {
   content: "";
   position: absolute;
   top: 20px;
-  left: 12px;
+  right: 10px;
   width: 10px;
   height: 1px;
   background-color: #000000;
 }
+
+
 
 .filter-manufacturers {
   width: auto;
@@ -878,7 +875,7 @@ fieldset {
 
 .legend-manufacturers {
   margin-left: -13px;
-  margin-bottom: 13px;
+  margin-bottom: 11px;
 }
 
 .filter-manufacturers-container {
@@ -894,10 +891,10 @@ fieldset {
 
 
 .legend-power {
-  margin: 0;
   padding: 0;
   margin-left: -13px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  padding-top: 5px;
   letter-spacing: 1px;
 }
 
@@ -914,10 +911,9 @@ fieldset {
   width: 140px;
   min-height: 39px;
   padding-top: 5px;
-  padding-left: 10px;
   border: 1px solid #c5c5c5;
   background-color: #ffffff;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -935,19 +931,19 @@ fieldset {
   color: #b8b8b8;
 }
 
-.sort-caption {
-  display: flex;
+.caption-sort {
+  margin-bottom: 0;
+  margin-right: 140px;
 }
 
-.caption-sort {
-  width: 230px;
+.sort-caption {
+  margin-bottom: 10px;
 }
 
 .sort-list {
-  width: 469px;
-  height: 39px;
+  width: 700px;
+  min-height: 39px;
   display: flex;
-  justify-content: flex-end;
   text-align: center;
   padding-top: 11px;
   background-color: #f7f3ec;
@@ -955,23 +951,22 @@ fieldset {
 
 .sort-item {
   min-width: 11px;
-  margin: 12px 15px 0 10px;
 }
 
 .sort-item:nth-child(5){
-   margin-left: 6px;
+  margin-right: 20px;
  }
 
 .sort-item:nth-child(4){
-  margin-left: 30px;
+  margin-right: 47px;
 }
 
 .sort-item:nth-child(3){
-  margin-left: 50px;
+  margin-right: 65px;
 }
 
 .sort-item:nth-child(2){
-  margin-left: 57px;
+  margin-right: 70px;
 }
 
 /* стилизация блока промо */
@@ -1175,7 +1170,7 @@ fieldset {
 .slide-text {
   margin: 0;
   margin-top: 4px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
@@ -1193,7 +1188,7 @@ fieldset {
   display: inline-block;
   width: 195px;
   height: 39px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -1361,8 +1356,8 @@ fieldset {
 }
 
 .sort-item a {
-  margin: 0;
-  padding: 0;
+  display: block;
+  padding-top: 12px;
   color: #cacaca;
   border-bottom: 1px dotted #ee3643;
 }
@@ -1462,7 +1457,7 @@ fieldset {
 
 .goods-item h3,
 .goods-item p {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
 }
 
@@ -1623,7 +1618,7 @@ fieldset {
 .tale-header h2 {
   margin: 0;
   padding: 0;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 24px;
@@ -1635,7 +1630,7 @@ fieldset {
   margin: 0;
   padding: 0;
   width: 940px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -1666,7 +1661,7 @@ fieldset {
   flex-direction: column;
 }
 
-.about-text {
+.about .about-text {
   width: 400px;
   margin-top: 23px;
   margin-bottom: 20px;
@@ -1762,7 +1757,7 @@ fieldset {
 }
 
 .services-text {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -2136,7 +2131,7 @@ fieldset {
 
 .modal-feedback input,
 .modal-feedback textarea {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   border: 2px solid #dee3e4;
@@ -2173,7 +2168,7 @@ fieldset {
 .bnt-feedback {
   width: 460px;
   min-height: 39px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -2246,7 +2241,7 @@ fieldset {
   min-height: 39px;
   margin-right: 20px;
   padding-top: 12px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
