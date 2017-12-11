@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style1.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header-up main-header">
@@ -108,9 +108,9 @@
                 <button type="button" class="visually-hidden prev-slide" aria-label="Предыдущий слайд" tabindex="-1"></button>
                 <div class="slider-radio-wrapper">
                   <div class="promo-slider-radiobox">
-                    <input class="visually-hidden promo-slider-radio" type="radio" name="switch-punchers" id="punchers-left" checked>
+                    <input class="visually-hidden promo-slider-radio" type="radio" name="switch-punchers" id="punchers-left" tabindex="0" checked>
                     <label class="switch-slider left" for="punchers-left"></label>
-                    <input class="visually-hidden promo-slider-radio" type="radio" name="switch-punchers" id="punchers-right">
+                    <input class="visually-hidden promo-slider-radio" type="radio" name="switch-punchers" id="punchers-right" tabindex="0">
                     <label class="switch-slider right" for="punchers-right"></label>
                   </div>
                 </div>
@@ -127,10 +127,10 @@
                 <button type="button" class="visually-hidden prev-slide" aria-label="Предыдущий слайд"></button>
                 <div class="slider-radio-wrapper">
                   <div class="promo-slider-radiobox">
-                    <input class="visually-hidden promo-slider-radio" type="radio" name="switch-punchers" id="drills-left" checked>
+                    <input class="visually-hidden promo-slider-radio" type="radio" name="switch-punchers" id="drills-left" tabindex="0">
                     <label class="switch-slider left" for="drills-left">
                     </label>
-                    <input class="visually-hidden promo-slider-radio" type="radio" name="switch-punchers" id="drills-right">
+                    <input class="visually-hidden promo-slider-radio" type="radio" name="switch-punchers" id="drills-right" tabindex="0">
                     <label class="switch-slider right" for="drills-right">
                     </label>
                   </div>
@@ -165,10 +165,10 @@
         <div class="goods-list-container">
           <ul class="catalog-items goods-list">
             <li>
-              <div class="goods-item">
+              <div class="goods-item" tabindex="0">
                 <div class="goods-item-container">
                   <div class="buttons">
-                    <a class="buy" href="#">Купить</a>
+                    <a class="buy" href="buygoods.html">Купить</a>
                     <a class="bookmark" href="#">В закладки</a>
                   </div>
                   <div class="goods-img-container bosch-9000">
@@ -181,10 +181,10 @@
               </div>
             </li>
             <li>
-              <div class="goods-item">
+              <div class="goods-item" tabindex="0">
                 <div class="goods-item-container">
                   <div class="buttons">
-                    <a class="buy" href="#">Купить</a>
+                    <a class="buy" href="buygoods.html">Купить</a>
                     <a class="bookmark" href="#">В закладки</a>
                   </div>
                   <div class="goods-img-container">
@@ -197,10 +197,10 @@
               </div>
             </li>
             <li>
-              <div class="goods-item">
+              <div class="goods-item" tabindex="0">
                 <div class="goods-item-container">
                   <div class="buttons">
-                    <a class="buy" href="#">Купить</a>
+                    <a class="buy" href="buygoods.html">Купить</a>
                     <a class="bookmark" href="#">В закладки</a>
                   </div>
                   <div class="goods-img-container bosch-6000">
@@ -213,11 +213,11 @@
               </div>
             </li>
             <li>
-              <div class="goods-item">
+              <div class="goods-item" tabindex="0">
                 <div class="flag flag-new">новинка</div>
                 <div class="goods-item-container">
                   <div class="buttons">
-                    <a class="buy" href="#">Купить</a>
+                    <a class="buy" href="buygoods.html">Купить</a>
                     <a class="bookmark" href="#">В закладки</a>
                   </div>
                   <div class="goods-img-container bosch-2000">
@@ -300,14 +300,13 @@
         </header>
         <div class="container services-wrapper">
           <div class="services-switcher">
-            <input class="visually hidden services-input" type="radio" name="switch-services" id="delivery" checked>
+            <input class="visually hidden services-input" type="radio" name="switch-services" id="delivery" tabindex="0" checked>
             <label class="services-label serve-delivery" for="delivery">Доставка</label>
-            <input class="visually hidden services-input" type="radio" name="switch-services" id="guaranty">
+            <input class="visually hidden services-input" type="radio" name="switch-services" id="guaranty" tabindex="0">
             <label class="services-label serve-guaranty" for="guaranty">Гарантия</label>
-            <input class="visually hidden services-input" type="radio" name="switch-services" id="credit">
+            <input class="visually hidden services-input" type="radio" name="switch-services" id="credit" tabindex="0">
             <label class="services-label serve-credit" for="credit">Кредит</label>
           </div>
-          <div class="services-decor"></div>
           <div class="services-slider">
             <section class="serve-slide delivery-slide">
               <header class="serve-slide-header delivery-slide">
@@ -355,12 +354,10 @@
             Огромный выбор товаров для ремонта и строительства не оставит равнодушными
             любителей сэкномить на гастарбайтерах.
           </p>
-          <div class="about-text">
-            <p class="services-text text-content">
-              Мы можем доставить ваш товар в самые отдаленные точки России!
-              Техномарт работает со многими транспортными компаниями:
-            </p>
-          </div>
+          <p class="about-text services-text text-content">
+            Мы можем доставить ваш товар в самые отдаленные точки России!
+            Техномарт работает со многими транспортными компаниями:
+          </p>
           <ul class="transport-list">
             <li class="transport-item">Деловые линии</li>
             <li class="transport-item">Автотрейдинг</li>
@@ -370,13 +367,11 @@
         </section>
         <section class="contacts">
           <h2 class="services-title text-content">Контакты</h2>
-          <div class="contacts-text">
-            <p class="services-text text-content">
-              Вы можете забрать товар сами, заехав в наш офис:
-            </p>
-          </div>
-          <a class="contacts-map" href="#"><img src="img/content/min-map.png" width="300" height="158" aria-label="Карта" alt="map"></a>
-          <a class="button-red contacts-feedback" href="#">Заблудились? Напишите нам!</a>
+          <p class="contacts-text services-text text-content">
+            Вы можете забрать товар сами, заехав в наш офис:
+          </p>
+          <a class="contacts-map" href="findus.html"></a>
+          <a class="button-red contacts-feedback" href="writeus.html">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </main>

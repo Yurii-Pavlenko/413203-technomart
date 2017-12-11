@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style1.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header-up catalog-header">
@@ -27,7 +27,7 @@
       </section>
       <section class="container store-info">
         <h2 class="visually-hidden">Коротко о магазине</h2>
-        <div class="header-text">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</div>
+        <p class="header-text">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
         <div class="header-contacts">
           <p class="header-phone">+7 (812) 555-05-55</p>
           <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -100,18 +100,17 @@
             <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
               <h2 class="catalog-part-caption">Фильтр:</h2>
               <fieldset class="filter-price">
-                <legend class="visually-hidden">Цена:</legend>
-                <div class="filter-title legend-price">Цена:</div>
+                <legend class="filter-title legend-price">Цена:</legend>
                 <div class="filter-price-range">
                   <div class="range-controls">
                     <div class="scale">
                       <div class="bar"></div>
                     </div>
-                    <button type="button" class="range-toggle range-toggle-min"></button>
-                    <button type="button" class="range-toggle range-toggle-max"></button>
+                    <button type="button" class="range-toggle range-toggle-min" aria-label="Ранжир минимальной цены"></button>
+                    <button type="button" class="range-toggle range-toggle-max" aria-label="Ранжир максимальной цены"></button>
                   </div>
                   <label class="caption">
-                    <input class="visually-hidden" type="range" name="price-min">
+                    <input class="visually-hidden" type="range" name="price-min" tabindex="-1">
                   </label>
                 </div>
                 <div class="filter-price-diapason">
@@ -121,47 +120,43 @@
                 </div>
               </fieldset>
               <fieldset class="filter-manufacturers">
-                <legend class="visually-hidden">Производители:</legend>
-                <div class="filter-title legend-manufacturers">Производители:</div>
+                <legend class="filter-title legend-manufacturers">Производители:</legend>
                 <div class="filter-manufacturers-container">
                   <ul class="filter-manufacturers-list">
                     <li class="filter-manufacturers-item filter-item">
-                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosch" id="bosch" checked>
+                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosch" id="bosch" tabindex="0" checked>
                       <label class="filter-label checked" for="bosch">Bosch</label>
                     </li>
                     <li class="filter-manufacturers-item filter-item">
-                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="interscol" id="interscol">
+                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="interscol" id="interscol" tabindex="0">
                       <label class="filter-label" for="interscol">Интерскол</label>
                     </li>
                     <li class="filter-manufacturers-item filter-item">
-                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="makita" id="makita" checked>
+                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="makita" id="makita" checked tabindex="0">
                       <label class="filter-label checked" for="makita">Makita</label>
                     </li>
                     <li class="filter-manufacturers-item filter-item">
-                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="dewalt" id="dewalt">
+                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="dewalt" id="dewalt" tabindex="0">
                       <label class="filter-label" for="dewalt">Dewalt</label>
                     </li>
                     <li class="filter-manufacturers-item filter-item">
-                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hitachi" id="hitachi">
+                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hitachi" id="hitachi" tabindex="0">
                       <label class="filter-label" for="hitachi">Hitachi</label>
                     </li>
                   </ul>
                 </div>
               </fieldset>
               <fieldset class="filter-power">
-                <legend class="visually-hidden">Питание:</legend>
-                <div class="filter-title legend-power">Питание:</div>
+                <legend class="filter-title legend-power">Питание:</legend>
                 <div class="filter-power-container">
                   <ul class="filter-power-list">
                     <li class="filter-power-item filter-item">
-                      <input class="visually-hidden filter-input-radio" type="radio" name="power-type" id="power-accum" checked>
+                      <input class="visually-hidden filter-input-radio" type="radio" name="power-type" id="power-accum" tabindex="0" checked>
                       <label class="filter-label on" for="power-accum">Аккумуляторные</label>
-                      <span class="filter-span"></span>
                     </li>
                     <li class="filter-power-item filter-item">
-                      <input class="visually-hidden filter-input-radio" type="radio" name="power-type" id="power-net">
+                      <input class="visually-hidden filter-input-radio" type="radio" name="power-type" id="power-net" tabindex="0">
                       <label class="filter-label off" for="power-net">Сетевые</label>
-                      <span class="filter-span"></span>
                     </li>
                   </ul>
                 </div>
@@ -170,39 +165,39 @@
             </form>
           </section>
           <section class="catalog-part sort">
-            <div class="sort-caption">
-              <h2 class="catalog-part-caption caption-sort">Сортировка:</h2>
-              <div class="sort-caption-container">
-                <ul class="sort-list">
-                  <li class="sort-item">
-                    <a class="sort-link active" href="#">По цене</a>
-                  </li>
-                  <li class="sort-item">
-                    <a class="sort-link" href="#">По типу</a>
-                  </li>
-                  <li class="sort-item">
-                    <a class="sort-link" href="#">По функционалу</a>
-                  </li>
-                  <li class="sort-item">
-                    <a class="sort-up-triangle active" href="#" aria-label="Сортировка по возрастанию">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#ee3643" d="M5.5 0L0 10h11z"/></svg>
-                    </a>
-                  </li>
-                  <li class="sort-item">
-                    <a class="sort-down-triangle" href="#" aria-label="Сортировка по убыванию">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#c5c5c5" d="M5.5 10L0 0h11"/></svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <header class="sort-caption">
+              <ul class="sort-list">
+                <li class="sort-item">
+                  <h2 class="catalog-part-caption caption-sort">Сортировка:</h2>
+                </li>
+                <li class="sort-item">
+                  <a class="sort-link active" href="#">По цене</a>
+                </li>
+                <li class="sort-item">
+                  <a class="sort-link" href="#">По типу</a>
+                </li>
+                <li class="sort-item">
+                  <a class="sort-link" href="#">По функционалу</a>
+                </li>
+                <li class="sort-item">
+                  <a class="sort-up-triangle active" href="#" aria-label="Сортировка по возрастанию">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#ee3643" d="M5.5 0L0 10h11z"/></svg>
+                  </a>
+                </li>
+                <li class="sort-item">
+                  <a class="sort-down-triangle" href="#" aria-label="Сортировка по убыванию">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#c5c5c5" d="M5.5 10L0 0h11"/></svg>
+                  </a>
+                </li>
+              </ul>
+            </header>
             <div class="goods-list-container">
               <ul class="catalog-items goods-list catalog-goods-list">
                 <li>
-                  <div class="goods-item">
+                  <div class="goods-item" tabindex="0">
                     <div class="goods-item-container">
                       <div class="buttons">
-                        <a class="buy" href="#">Купить</a>
+                        <a class="buy" href="buygoods.html">Купить</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="goods-img-container">
@@ -215,10 +210,10 @@
                   </div>
                 </li>
                 <li>
-                  <div class="goods-item">
+                  <div class="goods-item" tabindex="0">
                     <div class="goods-item-container">
                       <div class="buttons">
-                        <a class="buy" href="#">Купить</a>
+                        <a class="buy" href="buygoods.html">Купить</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="goods-img-container bosch-6000">
@@ -231,11 +226,11 @@
                   </div>
                 </li>
                 <li>
-                  <div class="goods-item">
+                  <div class="goods-item" tabindex="0">
                     <div class="flag flag-new">новинка</div>
                     <div class="goods-item-container">
                       <div class="buttons">
-                        <a class="buy" href="#">Купить</a>
+                        <a class="buy" href="buygoods.html">Купить</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="goods-img-container bosch-2000">
@@ -248,10 +243,10 @@
                   </div>
                 </li>
                 <li>
-                  <div class="goods-item">
+                  <div class="goods-item" tabindex="0">
                     <div class="goods-item-container">
                       <div class="buttons">
-                        <a class="buy" href="#">Купить</a>
+                        <a class="buy" href="buygoods.html">Купить</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="goods-img-container">
@@ -264,11 +259,11 @@
                   </div>
                 </li>
                 <li>
-                  <div class="goods-item">
+                  <div class="goods-item" tabindex="0">
                     <div class="flag flag-new">новинка</div>
                     <div class="goods-item-container">
                       <div class="buttons">
-                        <a class="buy" href="#">Купить</a>
+                        <a class="buy" href="buygoods.html">Купить</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="goods-img-container bosch-6000">
@@ -281,10 +276,10 @@
                   </div>
                 </li>
                 <li>
-                  <div class="goods-item">
+                  <div class="goods-item" tabindex="0">
                     <div class="goods-item-container">
                       <div class="buttons">
-                        <a class="buy" href="#">Купить</a>
+                        <a class="buy" href="buygoods.html">Купить</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="goods-img-container bosch-2000">
@@ -297,11 +292,11 @@
                   </div>
                 </li>
                 <li>
-                  <div class="goods-item">
+                  <div class="goods-item" tabindex="0">
                     <div class="flag flag-new">новинка</div>
                     <div class="goods-item-container">
                       <div class="buttons">
-                        <a class="buy" href="#">Купить</a>
+                        <a class="buy" href="buygoods.html">Купить</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="goods-img-container">
@@ -314,10 +309,10 @@
                   </div>
                 </li>
                 <li>
-                  <div class="goods-item">
+                  <div class="goods-item" tabindex="0">
                     <div class="goods-item-container">
                       <div class="buttons">
-                        <a class="buy" href="#">Купить</a>
+                        <a class="buy" href="buygoods.html">Купить</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="goods-img-container bosch-6000">
@@ -330,10 +325,10 @@
                   </div>
                 </li>
                 <li>
-                  <div class="goods-item">
+                  <div class="goods-item" tabindex="0">
                     <div class="goods-item-container">
                       <div class="buttons">
-                        <a class="buy" href="#">Купить</a>
+                        <a class="buy" href="buygoods.html">Купить</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="goods-img-container bosch-2000">
