@@ -16,7 +16,6 @@ body {
 
 a {
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 img {
@@ -101,6 +100,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   font-size: 24px;
   line-height: 24px;
+  text-transform: uppercase;
   background-color: #ee3643;
   border: 1px solid #e03643;
   box-shadow: 0 5px #b52933;
@@ -535,6 +535,7 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   line-height: 18px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .first::before {
@@ -995,6 +996,7 @@ fieldset {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
+  text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 2px;
 }
@@ -1196,6 +1198,7 @@ fieldset {
   vertical-align: top;
   padding-top: 12px;
   color: #ffffff;
+  text-transform: uppercase;
   margin: 92px 0 0 25px;
   background-color: #ee3643;
   border-radius: 2px;
@@ -1273,6 +1276,14 @@ fieldset {
   min-height: 89px;
   background-color: #f9f5f0;
   margin-bottom: 10px;
+}
+
+.goods-header {
+  text-transform: uppercase;
+}
+
+.manufacturers-header {
+  text-transform: uppercase;
 }
 
 .button-red {
@@ -1405,6 +1416,7 @@ fieldset {
   height: 35px;
   text-align: center;
   vertical-align: top;
+  text-transform: uppercase;
   border-radius: 2px;
 }
 
@@ -1855,6 +1867,7 @@ fieldset {
   width: 220px;
   padding-top: 12px;
   vertical-align: top;
+  text-transform: uppercase;
 }
 
 .contacts-feedback {
@@ -1863,6 +1876,7 @@ fieldset {
   padding-top: 12px;
   padding-left: 5px;
   vertical-align: top;
+  text-transform: uppercase;
 }
 
 /* Стилизация футера */
