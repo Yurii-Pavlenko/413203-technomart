@@ -121,7 +121,6 @@ input[type="radio"].visually-hidden {
 .search-header {
   display: flex;
   position: relative;
-  background-color: transparent;
 }
 
 .search-header .search {
@@ -143,8 +142,8 @@ input[type="radio"].visually-hidden {
   margin-left: -15px;
   padding-top: 12px;
   padding-left: 35px;
+  right: 180px;
   position: relative;
-  z-index: 1;
 }
 
 .search-label::before {
@@ -157,17 +156,23 @@ input[type="radio"].visually-hidden {
   background-position: 5px 12px;
   width: 25px;
   height: 42px;
-  z-index: 10;
 }
 
 .search-label:hover::before {
   background-image: url("../img/decor/icon-search-hover.svg");
 }
 
-.search:focus ~ .search-label,
+.search:focus ~ .search-label{
+  display: none;
+}
+
 .search-header:focus .search-label {
-  color: #ffffff;
-  background-color: #ffffff;
+  display: none;
+}
+
+.search:focus,
+.search-header:focus .search{
+  width: 250px;
 }
 
 .search-label:focus {
@@ -175,8 +180,24 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.search-header:focus .search-label::before {
-  background-image: url("../img/decor/icon-search-focus.svg");
+.search:focus ~ .search-psevdo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 234px;
+  width: 35px;
+  height: 42px;
+  background: url("../img/decor/icon-search-focus.svg") no-repeat 15px 12px;
+  background-color: #ffffff;
+}
+.search-header:focus::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -19px;
+  width: 35px;
+  height: 42px;
+  background: url("../img/decor/icon-search-focus.svg") no-repeat 15px 12px;
   background-color: #ffffff;
 }
 
@@ -1417,8 +1438,13 @@ fieldset {
   border: none;
 }
 
-.sort-item a:hover,
-.sort-item a:focus {
+.sort-item .sort-down-triangle:hover path,
+.sort-item .sort-down-triangle:focus path {
+  fill: #000000;
+}
+
+.sort-item .hovered:hover,
+.sort-item .hovered:focus {
   color: #000000;
   border-bottom-style: solid;
 }
@@ -1601,17 +1627,36 @@ fieldset {
 
 .manufacturers-item {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 215px;
   min-height: 145px;
   margin: 0 20px 20px 0;
   border: 1px solid #eaeaea;
-  flex-grow: 1;
+  cursor: pointer;
 }
 
 .manufacturers-item:hover {
   box-shadow: 0 5px 50px -10px rgba(0, 0, 0, 0.7);
+}
+
+.manufacturers-item:active {
+  box-shadow: 0 5px 35px -10px rgba(0, 0, 0, 0.7);
+  opacity: 0.5;
+}
+
+.item-smoke {
+  position: absolute;
+  width: 215px;
+  min-height: 145px;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 10;
+}
+
+.manufacturers-link {
+  position: absolute;
+  z-index: 1;
 }
 
 .manufacturers {
@@ -2063,6 +2108,7 @@ fieldset {
 
 .footer-contacts a:active {
   color: #ee3643;
+  text-decoration: none;
 }
 
 .footer-social {
