@@ -296,6 +296,10 @@ input[type="radio"].visually-hidden {
   border: 3px solid #ffffff;
 }
 
+.main-header .header-phone {
+  left: 41px;
+}
+
 .header-phone::before {
   content: "";
   position: absolute;
@@ -316,6 +320,12 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+}
+
+.main-header .header-address {
+  position: relative;
+  top: 0;
+  left: 36px;
 }
 
 .user-navigation {
@@ -780,6 +790,15 @@ fieldset {
   background: url("../img/decor/checkbox-off.svg") no-repeat 0 0;
 }
 
+.filter-input-checkbox:hover + label::before {
+  background: url("../img/decor/checkbox-off-hover.svg") no-repeat 0 0;
+}
+
+.filter-input-checkbox:disabled + label::before {
+  background: url("../img/decor/checkbox-off-block.svg") no-repeat 0 0;
+}
+
+
 .filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
@@ -788,6 +807,14 @@ fieldset {
   width: 25px;
   height: 25px;
   background: url("../img/decor/checkbox-on.svg") no-repeat 0 0;
+}
+
+.filter-input-checkbox:checked:hover + label::before {
+  background: url("../img/decor/checkbox-on-hover.svg") no-repeat 0 0;
+}
+
+.filter-input-checkbox:checked:disabled + label::before {
+  background: url("../img/decor/checkbox-on-block.svg") no-repeat 0 0;
 }
 
 .filter-input-radio + label::before {
@@ -800,6 +827,14 @@ fieldset {
   background: url("../img/decor/radio-off.svg") no-repeat 0 0;
 }
 
+.filter-input-radio:hover + label::before {
+  background: url("../img/decor/radio-off-hover.svg") no-repeat 0 0;
+}
+
+.filter-input-radio:disabled + label::before {
+  background: url("../img/decor/radio-off-block.svg") no-repeat 0 0;
+}
+
 .filter-input-radio:checked + label::before {
   content: "";
   position: absolute;
@@ -809,6 +844,15 @@ fieldset {
   height: 25px;
   background: url("../img/decor/radio-on.svg") no-repeat 0 0;
 }
+
+.filter-input-radio:checked:hover + label::before {
+  background: url("../img/decor/radio-on-hover.svg") no-repeat 0 0;
+}
+
+.filter-input-radio:checked:disabled + label::before {
+  background: url("../img/decor/radio-on-block.svg") no-repeat 0 0;
+}
+
 
 .filter-power-type {
   position: relative;
