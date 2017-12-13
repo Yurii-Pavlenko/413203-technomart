@@ -1886,13 +1886,6 @@ fieldset {
   background-color: #e2e1dc;
 }
 
-.contacts-map::before {
-  content: url("../img/content/min-map.png");
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .services-switcher {
   display: -webkit-box;
   display: -ms-flexbox;
