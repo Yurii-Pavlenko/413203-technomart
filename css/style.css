@@ -2117,7 +2117,7 @@ fieldset {
 }
 
 .footer-navigation {
-  min-height: 193px;
+  min-height: 190px;
   background-color: #32425c;
 }
 
@@ -2154,27 +2154,29 @@ fieldset {
 }
 
 .footer-nav-list {
-  width: 543px;
+  width: 650px;
   margin-bottom: 34px;
   padding-top: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .footer-subnav-list {
-  width: 518px;
+  width: 630px;
   margin-left: 23px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-nav-list a {
-  margin-right: 57px;
+  margin-right: 59px;
   color: #f1f5f7;
   text-transform: none;
 }
@@ -2227,9 +2229,9 @@ fieldset {
   background-color: #293449;
 }
 
-.footer-copyright {
+.main-footer .copyright {
   width: 240px;
-  margin-right: 140px;
+  margin-right: 112px;
 }
 
 .footer-contacts a {
@@ -2248,7 +2250,7 @@ fieldset {
 }
 
 .footer-social {
-  margin-right: 125px;
+  margin-right: 117px;
   padding-top: 3px;
 }
 
@@ -2256,7 +2258,6 @@ fieldset {
   display: inline-block;
   width: 40px;
   height: 40px;
-  margin: -20px 0 0 126px;
   text-align: center;
   vertical-align: top;
   color: #ffffff;
@@ -2288,12 +2289,13 @@ fieldset {
 }
 
 .footer-social-list {
-  width: 150px;
+  width: 170px;
   min-height: 50px;
+  margin-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 90px;
+  flex-wrap: wrap;
 }
 
 .footer-container {
@@ -2304,11 +2306,11 @@ fieldset {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-left: 48px;
 }
 
 .footer-contacts-text {
   margin-right: 50px;
+  padding-right: 47px;
 }
 
 /*  стилизация модальных окон  */
