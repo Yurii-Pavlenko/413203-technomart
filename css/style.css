@@ -1937,7 +1937,8 @@ fieldset {
   display: none;
 }
 
-.image-delivery {
+.serve-slide-header::after {
+  content: "";
   position: absolute;
   top: 20px;
   left: 150px;
