@@ -1893,8 +1893,14 @@ fieldset {
   background-color: #e2e1dc;
 }
 
-.contacts-map iframe {
+.contacts-map::after {
+  content: url("../img/content/min-map.png");
+  position: absolute;
+  top: 0;
+  left: 0;
   border: 0;
+  width: 300px;
+  height: 158px;
 }
 
 .services-switcher {
