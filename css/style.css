@@ -1893,6 +1893,10 @@ fieldset {
   background-color: #e2e1dc;
 }
 
+.contacts-map iframe {
+  border: 0;
+}
+
 .services-switcher {
   display: -webkit-box;
   display: -ms-flexbox;
