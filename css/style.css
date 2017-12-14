@@ -729,7 +729,6 @@ fieldset {
 
 .filter-price {
   margin: -19px 0 -12px -12px;
-  padding-left: 0;
   padding-right: 0;
 }
 
@@ -1021,12 +1020,10 @@ fieldset {
 
 .filter-power {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 9px;
   margin-left: 0;
   margin-right: 0;
-  padding-top: 0;
   padding-bottom: 0;
-  padding-left: 0;
   padding-right: 0;
 
 }
