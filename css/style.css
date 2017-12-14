@@ -1080,7 +1080,6 @@ fieldset {
   width: 111px;
   margin-bottom: 0;
   padding-left: 11px;
-  /*margin-right: 140px;*/
 }
 
 .sort-caption {
@@ -1088,14 +1087,12 @@ fieldset {
 }
 
 .sort-list {
-/*  width: 700px;*/
   min-height: 39px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
   padding-top: 11px;
-/*  background-color: #f7f3ec;*/
 }
 
 .sort-item {
@@ -1108,22 +1105,14 @@ fieldset {
 }
 
 .sort-item:nth-child(5){
-  /*margin-right: 20px;*/
   padding-left: 17px;
 }
 
-.sort-item:nth-child(4){
-/*  margin-right: 47px;*/
-/*  padding-left: 65px;*/
-}
-
 .sort-item:nth-child(3){
-  /*margin-right: 65px;*/
   padding-right: 57px;
 }
 
 .sort-item:nth-child(2){
- /* margin-right: 70px;*/
   padding-right: 60px;
   background-color: #f7f3ec;
 }
