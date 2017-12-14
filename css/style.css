@@ -688,10 +688,16 @@ input[type="radio"].visually-hidden {
   color: #000000;
   text-transform: uppercase;
 }
+/*
 
 .filter {
   width: 220px;
   margin-right: 20px;
+}
+*/
+
+.sort {
+  padding-left: 20px;
 }
 
 fieldset {
@@ -723,6 +729,8 @@ fieldset {
 
 .filter-price {
   margin: -19px 0 -12px -12px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .filter-title {
@@ -746,6 +754,7 @@ fieldset {
 }
 
 .range-controls {
+  width: 220px;
   min-height: 80px;
 }
 
@@ -760,7 +769,7 @@ fieldset {
 
 .range-controls .bar {
   position: absolute;
-  top: -2px;
+  top: 0;
   right: 35px;
   width: 125px;
   height: 2px;
@@ -936,6 +945,10 @@ fieldset {
   background-color: #f7f3ec;
 }
 
+.filter-caption {
+  width: 220px;
+}
+
 .filter-price input {
   width: 110px;
   height: 75px;
@@ -980,7 +993,6 @@ fieldset {
 
 
 .filter-manufacturers {
-  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1007,6 +1019,17 @@ fieldset {
   min-height: 40px;
 }
 
+.filter-power {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+
+}
 
 .legend-power {
   padding: 0;
@@ -1057,8 +1080,10 @@ fieldset {
 }
 
 .caption-sort {
+  width: 111px;
   margin-bottom: 0;
-  margin-right: 140px;
+  padding-left: 11px;
+  /*margin-right: 140px;*/
 }
 
 .sort-caption {
@@ -1066,34 +1091,48 @@ fieldset {
 }
 
 .sort-list {
-  width: 700px;
+/*  width: 700px;*/
   min-height: 39px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
   padding-top: 11px;
-  background-color: #f7f3ec;
+/*  background-color: #f7f3ec;*/
 }
 
 .sort-item {
   min-width: 11px;
+  background-color: #f7f3ec;
+}
+
+.sort-item:nth-child(6) {
+  padding-right: 17px;
 }
 
 .sort-item:nth-child(5){
-  margin-right: 20px;
+  /*margin-right: 20px;*/
+  padding-left: 17px;
 }
 
 .sort-item:nth-child(4){
-  margin-right: 47px;
+/*  margin-right: 47px;*/
+/*  padding-left: 65px;*/
 }
 
 .sort-item:nth-child(3){
-  margin-right: 65px;
+  /*margin-right: 65px;*/
+  padding-right: 57px;
 }
 
 .sort-item:nth-child(2){
-  margin-right: 70px;
+ /* margin-right: 70px;*/
+  padding-right: 60px;
+  background-color: #f7f3ec;
+}
+
+.sort-item:first-child {
+  padding-right: 127px;
 }
 
 /* стилизация блока промо */
@@ -1532,6 +1571,15 @@ fieldset {
   border-bottom: 1px dotted #ee3643;
 }
 
+.sort-item .hovered {
+  width: 59px;
+  background-color: #f7f3ec;
+}
+
+.sort-item .functioned {
+  width: 122px;
+}
+
 .sort-item .sort-down-triangle {
   border: none;
 }
@@ -1548,6 +1596,7 @@ fieldset {
 }
 
 .sort-item .active {
+  width: 60px;
   color: #ee3643;
   border: none;
 }
